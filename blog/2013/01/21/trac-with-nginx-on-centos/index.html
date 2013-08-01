@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Trac with Nginx on Centos - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Trac is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Avoid conflict with ender.js.
+    jQuery.noConflict();
+</script>
+<!-- jQuery Form Plugin -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<!-- jQuery Form Validation Plugin -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="/javascripts/google_form.js"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:chriscowley.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/yum">Yum</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Trac With Nginx on Centos</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T11:53:00+01:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="tac.edgewall.org">Trac</a> is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.</p>
+
+<!-- more -->
+
+
+<p>What Nginx does do extremely well is Proxy stuff. Use this with Trac&rsquo;s built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac&rsquo;s server is not just for dev (a la WEBrick). It is fine for production use.</p>
+
+<p>The first thing to do (obviously) is to install Trac. I get it from Pip, although a slightly older version is in <a href="http://fedoraproject.org/wiki/EPEL">EPEL</a> if you prefer to stick with native packages.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install python-setuptools
+</span><span class='line'>sudo pip install Trac
+</span><span class='line'>sudo useradd -r -d /var/local/trac trac
+</span><span class='line'>sudo -u trac trac-admin /var/local/trac/trac.example.com initenv
+</span><span class='line'>sudo -u trac htpasswd -c /var/local/trac/.htpasswd example-realm chris</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Answer the little question it asks you &ndash; this includes the VCS you want to use, but that is for another day. I use the TracGit plugin to link to my Git repos.</p>
+
+<p>Create an init script (<code>/etc/init.d/trac</code>) that contains something like:</p>
+
+<div><script src='https://gist.github.com/4586539.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<p>Start up the Trac daemon and enable it on boot up</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod +x /etc/init.d/trac
+</span><span class='line'>sudo chkconfig trac on
+</span><span class='line'>sudo /etc/init.d/trac start</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Open it up and have a look at least. You will probably want to modify it to use your authentication realm.</p>
+
+<p>Now you need to configure Nginx. I use the package from <a href="http://fedoraproject.org/wiki/EPEL">EPEL</a>. Enable that if you have not already and run</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yum install nginx</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create the file <code>/etc/nginx/conf.d/trac.conf</code> containing something like:</p>
+
+<div><script src='https://gist.github.com/4586630.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<p>Finally enable Nginx on boot up and start it:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chkconfig nginx on
+</span><span class='line'>sudo server nginx start</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T11:53:00+01:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos/" data-via="" data-counturl="http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/12/17/what-will-hp-do-next/" title="Previous Post: What will HP do next?">&laquo; What will HP do next?</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/05/in-praise-of-old-school-unix/" title="Next Post: In praise of old school UNIX">In praise of old school UNIX &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/home-made-energy-drink/">Home-made Energy Drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/connect-to-fedora-19-with-freenx/">Connect to Fedora 19 with FreeNX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/15/home-made-exercise-drink/">Home-made Exercise drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/23/automated-glusterfs/">Automated GlusterFS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/dell-announces-vrtx/">Dell Announces VRTX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

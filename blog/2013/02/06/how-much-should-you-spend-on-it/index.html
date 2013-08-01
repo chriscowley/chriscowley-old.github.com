@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How much should you spend on IT - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="A recent discussion/argument I had on Reddit got me thinking about the cost of solutions we put in. In an ideal world everything would did have full &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chriscowley.github.io/blog/2013/02/06/how-much-should-you-spend-on-it/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Avoid conflict with ender.js.
+    jQuery.noConflict();
+</script>
+<!-- jQuery Form Plugin -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<!-- jQuery Form Validation Plugin -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="/javascripts/google_form.js"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:chriscowley.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/yum">Yum</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">How Much Should You Spend on IT</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-06T16:04:00+01:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A recent discussion/argument I had on Reddit got me thinking about the cost of solutions we put in.</p>
+
+<p>In an ideal world everything would did have full redundancy, and the customer would never have any downtime. Everything would always be up-to-date and keeping it so would require restarting. The reality is very different unfortunately.</p>
+
+<!--more-->
+
+
+<p>This potentially rambling post was inspired by someone accusing me of having &ldquo;a horrible idea&rdquo; because I suggested someone put pfsense on an Atom PC as a VPN router for a small office. He then proceeded to expain to me how you should always buy an expensive black box from a vendor (he didn&rsquo;t say black box if I am honest, I am interpreting), how you have to always have support on absolutely everything. I called &lsquo;bullshit&rsquo; and the whole thing went round in circles a bit until we both realised that were actually singing from the same song sheet, but from different ends of the room.</p>
+
+<p><span class='pullquote-right' data-pullquote='it is always necessary to look at the actual requirements of the end-user'>
+When looking at a solution it is always necessary to look at the actual requirements of the end-user. I had a conversation with a Director at $lastjob once. We had recently had a planned outage on the website for a few minutes one Sunday night so I could de-commission the old SAN. He said that he wanted us to get to 99.999% IT uptime. My reply after some quick calculations was that we had actually achieved that for the last 3 years at least, but that I would not like to guarantee it in the future with our current and planned infrastructure. This lead to him asking me to go ahead and do the calculations on how to guarantee it. When I went back to him with my figure (done using lots of Open Source, and no vendor support) he changed his mind. This was in what would be classed as an SME &ndash; heading towards £100 million a year turnover and one of world&rsquo;s best in their field. Not a small company by any means, but they could not justify that cost.
+</span></p>
+
+<p>Having said that they could justify a lot. All our servers were clustered, storage was Fibre-channel, they had a 100TB 8Gb array for a team of 2 people who crunched monster video files all day. All that was justified expenditure, but they were not an internet company, so a bit of downtime could be justified. Even when we had a major disaster and a large swathe of Linux VMs disappeared from this world, nobody actually had to stop working and no money was lost.</p>
+
+<p>A small business is not going to dump the money for multi-thousand pound Cisco router and a zero-contention synchronous internet connection. They may think that they need the best of everything, they may even be willing to pay for it if they have got enough of daddy&rsquo;s funding behind them. However that would be foolish, that money would be better spent on giving everyone a Christmas bonus.</p>
+
+<p>Support contracts are another bone of contention. Now everything I have is under one, but that is not always necessary. I once needed to get a couple of TBs of storage into a large office asap. I happenned to have a few FC HBAs, a couple of old Proliants and a pile of MSA1000s in a cupboard. I built up a box with a pair of HBAs and a single MSA1000 and sent the whole lot up to the office with strict instructions that all the extras were for spares only. If something broke, no need for support &ndash; just swap it out. I figured it would be good for at least another 3 years. Especially as backups were pretty reliable there. Would a new SAN with expensive support have been more reliable, I doubt it. We would have to wait 4 hours for a new disk, rather than the 5 minutes a took to walk to the cupboard.</p>
+
+<p><span class='pullquote-right' data-pullquote='wisdom can fall at either end of the price-spectrum'>
+It is not always necessary to get the shiniest stuff, with the longest/quickest support contract. We know our gear, we know how reliable it is, we know how long it lasts. The people paying the bills do not, they rely on us to advise them honestly and wisely. That wisdom can fall at either end of the price-spectrum, but needs to be based on the ACTUAL risks and their effect.
+</span></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-06T16:04:00+01:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/sysadmin/'>sysadmin</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chriscowley.github.io/blog/2013/02/06/how-much-should-you-spend-on-it/" data-via="" data-counturl="http://chriscowley.github.io/blog/2013/02/06/how-much-should-you-spend-on-it/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/02/05/in-praise-of-old-school-unix/" title="Previous Post: In praise of old school UNIX">&laquo; In praise of old school UNIX</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/21/something-from-the-shadows/" title="Next Post: Something from the shadows">Something from the shadows &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/home-made-energy-drink/">Home-made Energy Drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/connect-to-fedora-19-with-freenx/">Connect to Fedora 19 with FreeNX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/15/home-made-exercise-drink/">Home-made Exercise drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/23/automated-glusterfs/">Automated GlusterFS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/dell-announces-vrtx/">Dell Announces VRTX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

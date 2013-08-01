@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="I&rsquo;ve had a another bee in my bonnet recently. Specifically, it has been to do with hardware vs software RAID, but I think it goes deeper than &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chriscowley.github.io/blog/page/2/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Avoid conflict with ender.js.
+    jQuery.noConflict();
+</script>
+<!-- jQuery Form Plugin -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<!-- jQuery Form Validation Plugin -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="/javascripts/google_form.js"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:chriscowley.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/yum">Yum</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/07/stop-the-hate-on-software-raid/">Stop the Hate on Software RAID</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-07T20:21:00+02:00" pubdate data-updated="true">Apr 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="right" src="/images/NetappClustering.jpg">I&rsquo;ve had a another bee in my bonnet recently. Specifically, it has been to do with hardware vs software RAID, but I think it goes deeper than that. It started a couple of months back with a discussion on <a href="http://redd.it/18dp63">Reddit</a>. Some of the comments were:</p>
+
+<blockquote><p>Get out, get out now.</p>
+
+<p>while he still can..</p>
+
+<p>WHAT!?
+60 TB on software raid.
+Jeezus.</p>
+
+<p>Software raid? Get rid of it.</p></blockquote>
+
+<p>It then got re-awakened the other day when Matt Simmons (aka <a href="http://www.standalone-sysadmin.com/blog/">The Standalone Sysadmin</a>) asked the following question on Twitter:</p>
+
+<blockquote class="twitter-tweet"><p>So what are the modern arguments for / against hardware / software RAID? I don&#8217;t get out much. <a href="https://twitter.com/search/%23sysadmin">#sysadmin</a></p>&mdash; Matt Simmons (@standaloneSA) <a href="https://twitter.com/standaloneSA/status/319932013492703233">April 4, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/04/07/stop-the-hate-on-software-raid/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/25/writeable-tftp-server-on-centos/">Writeable TFTP Server on CentOS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-25T15:45:00+01:00" pubdate data-updated="true">Mar 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Well this caught me out for an embarassingly long time. There are <a href="http://blog.penumbra.be/tag/tftp/">loads</a> <a href="http://www.question-defense.com/2008/11/13/linux-setup-tftp-server-on-centos">of</a> <a href="http://wiki.centos.org/EdHeron/PXESetup">examples</a> of setting up a TFTP server on the web. The vast majority of them assume that you are using them read-only for PXE booting.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/25/writeable-tftp-server-on-centos/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/18/what-a-boss-owes-their-staff/">What a Boss Owes Their Staff</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-18T20:47:00+01:00" pubdate data-updated="true">Mar 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="right" src="/images/reputation-management-starts-with-trust.jpg"> I recently had a conversation on Twitter with my friend <a href="http://www.robborley.com/">Rob Borley</a> who runs a <a href="http://www.dootrix.com/">mobile startup</a>. He had asked what interesting perks he should be giving his <a href="https://twitter.com/bobscape/statuses/313610008535367680">staff</a>.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/18/what-a-boss-owes-their-staff/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/01/thoughts-on-the-shiney-new-vmax/">Thoughts on the Shiney New VMAX</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-01T15:21:00+01:00" pubdate data-updated="true">Mar 1<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="right" src="http://www.emc.com/R1/images/EMC_Image_C_1310593327367_header-image-vmax-10k.png"> I&rsquo;ve spent a significant amount of time recently swatting up on EMC&rsquo;s new <a href="http://chucksblog.emc.com/chucks_blog/2013/02/introducing-vmax-cloud-edition.html">VMAX Cloud Edition</a>. It has to be said that this looks like one of the most interesting storage announcements I have seen in a long time. In fact I have a project coming up that I think it may well be a perfect fit for.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/01/thoughts-on-the-shiney-new-vmax/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/25/the-linux-to-storage/">The Linux to Storage</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-25T13:09:00+01:00" pubdate data-updated="true">Feb 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Martin &ldquo;Storagebod&rdquo; Glassborow recently wrote an interesting article where he asked &ldquo;Who&rsquo;ll do a Linux to Storage?&rdquo;. As someone who is equal parts Storage and Linux, the same question runs around my head quite often. Not just that, but how to do it. It is safe to say that all the constituent parts are already in the Open Source Ecosystem. It just needs someone to pull them all together wrap them up in an integrated interface (be that a GUI, CLI, an API or all).</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/25/the-linux-to-storage/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/21/something-from-the-shadows/">Something From the Shadows</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-21T16:06:00+01:00" pubdate data-updated="true">Feb 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>An intriguing startup came out of stealth mode a few days ago. <a href="http://pernixdata.com/">Pernix Data</a> was founded by Pookan Kumar and Satyam Vaghani, both of who were pretty near top of the pile in VMware&rsquo;s storage team.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/21/something-from-the-shadows/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/06/how-much-should-you-spend-on-it/">How Much Should You Spend on IT</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-06T16:04:00+01:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A recent discussion/argument I had on Reddit got me thinking about the cost of solutions we put in.</p>
+
+<p>In an ideal world everything would did have full redundancy, and the customer would never have any downtime. Everything would always be up-to-date and keeping it so would require restarting. The reality is very different unfortunately.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/06/how-much-should-you-spend-on-it/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/05/in-praise-of-old-school-unix/">In Praise of Old School UNIX</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-05T16:13:00+01:00" pubdate data-updated="true">Feb 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>What am I doing today? Documentation that is what. I am writing a document on how to do <a href="http://www.chriscowley.me.uk/blog/2012/11/19/sftp-chroot-on-centos/">this</a>. To any Linux user it is a very simple process and I could just give them a link to my own website.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/05/in-praise-of-old-school-unix/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/21/trac-with-nginx-on-centos/">Trac With Nginx on Centos</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T11:53:00+01:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="tac.edgewall.org">Trac</a> is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/01/21/trac-with-nginx-on-centos/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/17/what-will-hp-do-next/">What Will HP Do Next?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-17T15:16:00+01:00" pubdate data-updated="true">Dec 17<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>HP recently announced a new range of 3Par based arrays that are aimed at mid-range enterprise. There now appear to be 2 ranges for the future:</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/17/what-will-hp-do-next/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/home-made-energy-drink/">Home-made Energy Drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/connect-to-fedora-19-with-freenx/">Connect to Fedora 19 with FreeNX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/15/home-made-exercise-drink/">Home-made Exercise drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/23/automated-glusterfs/">Automated GlusterFS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/dell-announces-vrtx/">Dell Announces VRTX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

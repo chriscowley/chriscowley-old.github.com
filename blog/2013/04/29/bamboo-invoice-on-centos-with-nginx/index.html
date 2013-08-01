@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Bamboo Invoice on Centos with Nginx - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="BambooInvoice is free Open Source invoicing software intended for small businesses and independent contractors. It is easy to use and creates pretty &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Avoid conflict with ender.js.
+    jQuery.noConflict();
+</script>
+<!-- jQuery Form Plugin -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<!-- jQuery Form Validation Plugin -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="/javascripts/google_form.js"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:chriscowley.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/yum">Yum</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Bamboo Invoice on Centos With Nginx</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-29T21:16:00+02:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>BambooInvoice is free Open Source invoicing software intended for small businesses and independent contractors. It is easy to use and creates pretty good looking invoices.</p>
+
+<!-- more -->
+
+
+<p>It is a simple PHP application that is based on the CodeIgniter framework. This means it is really simple to install on a typically LAMP stack. I however use Nginx and could not find any notes on how to configure it. It is pretty typical you can get most of the way by reading any of the Nginx howto documents on the web. Personally, for PHP apps, I use PHP-FPM, so you could use <a href="http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-centos-6.4">this on Howtoforge</a> to get most of the way. That will get you a working Nginx, PHP and MySQL system.</p>
+
+<p>Download the install file from [<a href="http://bambooinvoice.org/">http://bambooinvoice.org/</a>] an unzip is in your www folder:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> /var/www
+</span><span class='line'>wget http://bambooinvoice.org/img/bambooinvoice_089.zip
+</span><span class='line'>unzip bambooinvoice_089.zip
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You next step is to create a database for it along with a user:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='mysql'><span class='line'><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">bambooinvoice</span> <span class="k">DEFAULT</span> <span class="k">CHARACTER</span> <span class="kt">SET</span> <span class="n">utf8</span><span class="p">;</span>
+</span><span class='line'><span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">ON</span> <span class="n">bambooinvoice</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;bambooinvoice&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;bambooinvoice&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="n">FLUSH</span> <span class="n">PRIVILEGES</span><span class="p">;</span>
+</span><span class='line'><span class="k">exit</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now you can edit the config files to point at the database:</p>
+
+<figure class='code'><figcaption><span>/var/www/bambooinvoices/bamboo_system_files/application/config/database.php</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="o">&lt;?</span><span class="nx">php</span>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;BASEPATH&#39;</span><span class="p">))</span> <span class="k">exit</span><span class="p">(</span><span class="s1">&#39;No direct script access allowed&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$active_group</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;hostname&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;username&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bambooinvoice&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;password&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bambooinvoice&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;database&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bambooinvoice&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;dbdriver&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;mysql&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;dbprefix&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bamboo_&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;active_r&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;pconnect&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;db_debug&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;cache_on&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;cachedir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;char_set&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;utf8&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$db</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">][</span><span class="s1">&#39;dbcollat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;utf8_general_ci&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next you need set the base_url in <code>/var/www/bambooinvoices/bamboo_system_files/application/config/config.php</code>. Nothing else is essential in that file, but read the docs in the ZIP file to see what else you want to change.</p>
+
+<p>Now the all important bit.</p>
+
+<figure class='code'><figcaption><span>/etc/nginx/conf.d/bamboo.conf</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+</pre></td><td class='code'><pre><code class='nginx'><span class='line'><span class="k">server</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">server_name</span> <span class="s">bamboo.example</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">root</span> <span class="s">/var/www/bambooinvoice/</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">index</span> <span class="s">index.php</span> <span class="s">index.html</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">access_log</span>              <span class="s">/var/log/nginx/bamboo_access.log</span><span class="p">;</span>
+</span><span class='line'>    <span class="kn">error_log</span>               <span class="s">/var/log/nginx/bamboo_error.log</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kn">location</span> <span class="p">=</span> <span class="s">/robots.txt</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kn">allow</span> <span class="s">all</span><span class="p">;</span>
+</span><span class='line'>        <span class="kn">log_not_found</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>        <span class="kn">access_log</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).</span>
+</span><span class='line'>    <span class="kn">location</span> <span class="p">~</span> <span class="sr">/\.</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kn">deny</span> <span class="s">all</span><span class="p">;</span>
+</span><span class='line'>        <span class="kn">access_log</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>        <span class="kn">log_not_found</span> <span class="no">off</span><span class="p">;</span>
+</span><span class='line'>     <span class="p">}</span>
+</span><span class='line'>     <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span><span class='line'>         <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri/</span> <span class="s">/index.php</span><span class="nv">$request_uri</span> <span class="s">/index.php</span><span class="p">;</span>
+</span><span class='line'>     <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>     <span class="kn">location</span> <span class="p">~</span> <span class="sr">\.php($|/)</span> <span class="p">{</span>
+</span><span class='line'>         <span class="kn">try_files</span> <span class="nv">$uri</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">fastcgi_pass</span> <span class="n">127.0.0.1</span><span class="p">:</span><span class="mi">9000</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">include</span> <span class="s">/etc/nginx/fastcgi_params</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">fastcgi_index</span> <span class="s">index.php</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">set</span> <span class="nv">$script</span> <span class="nv">$uri</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">set</span> <span class="nv">$path_info</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">if</span> <span class="s">(</span><span class="nv">$uri</span> <span class="p">~</span> <span class="sr">&quot;^(.+\.php)(/.+)&quot;)</span> <span class="p">{</span>
+</span><span class='line'>             <span class="kn">set</span> <span class="nv">$script</span> <span class="nv">$1</span><span class="p">;</span>
+</span><span class='line'>             <span class="kn">set</span> <span class="nv">$path_info</span> <span class="nv">$2</span><span class="p">;</span>
+</span><span class='line'>         <span class="p">}</span>
+</span><span class='line'>         <span class="kn">fastcgi_param</span> <span class="s">URI</span> <span class="nv">$uri</span><span class="p">;</span>
+</span><span class='line'>         <span class="c1"># Next two lines are fix the 502 (Bad gateway) error</span>
+</span><span class='line'>         <span class="kn">fastcgi_buffers</span> <span class="mi">8</span> <span class="mi">16k</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">fastcgi_buffer_size</span> <span class="mi">32k</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>         <span class="kn">fastcgi_param</span> <span class="s">PATH_INFO</span> <span class="nv">$path_info</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">fastcgi_param</span> <span class="s">SCRIPT_NAME</span> <span class="nv">$script</span><span class="p">;</span>
+</span><span class='line'>         <span class="kn">fastcgi_param</span> <span class="s">SCRIPT_FILENAME</span> <span class="nv">$document_root$script</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At first glance, there is nothing out of the ordinary. This is pretty much what Howtoforge gives you. Look more closely and I have added the 3 lines 39-41. This solves a gateway problem I had when creating a client.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-29T21:16:00+02:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/" data-via="" data-counturl="http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/11/using-hiera-with-puppet/" title="Previous Post: Using Hiera with Puppet">&laquo; Using Hiera with Puppet</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/05/13/emc-vipr-thoughts/" title="Next Post: EMC ViPR thoughts">EMC ViPR thoughts &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/home-made-energy-drink/">Home-made Energy Drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/connect-to-fedora-19-with-freenx/">Connect to Fedora 19 with FreeNX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/15/home-made-exercise-drink/">Home-made Exercise drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/23/automated-glusterfs/">Automated GlusterFS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/dell-announces-vrtx/">Dell Announces VRTX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

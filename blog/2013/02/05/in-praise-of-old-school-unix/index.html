@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>In praise of old school UNIX - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="What am I doing today? Documentation that is what. I am writing a document on how to do this. To any Linux user it is a very simple process and I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Avoid conflict with ender.js.
+    jQuery.noConflict();
+</script>
+<!-- jQuery Form Plugin -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<!-- jQuery Form Validation Plugin -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script> 
+<script src="/javascripts/google_form.js"></script>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sites" value="site:chriscowley.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search&hellip;"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/consulting">Consulting</a></li>
+  <li><a href="/yum">Yum</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">In Praise of Old School UNIX</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-05T16:13:00+01:00" pubdate data-updated="true">Feb 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>What am I doing today? Documentation that is what. I am writing a document on how to do <a href="http://www.chriscowley.me.uk/blog/2012/11/19/sftp-chroot-on-centos/">this</a>. To any Linux user it is a very simple process and I could just give them a link to my own website.</p>
+
+<!--more-->
+
+
+<p>I am not writing this for a techinical audience though. The people who are going to perform this work will be the &lsquo;Level 1 operatives&rsquo;. This translates roughly to &ldquo;anyone we can find on the street corners of some Far East city&rdquo;. If I tell them to press the red button labelled &ldquo;press me&rdquo; and it turns out to be orange, they will stop. I cannot assume the ability to edit a file in Vi. How can you work around this, well you need to make everything a copy and paste operation. This is easily done in Bash thanks to IO redirection and of course Sed.</p>
+
+<p>Now, a brief recap may be in order, as there are some perfectly knowledgable Linux users who do not know what Sed is. Really, one of them sits behind me. Sed stands for Stream EDitor, and it parses text and applies transformations to it. It was one of the first UNIX utilities. It kind of sits between <a href="https://en.wikipedia.org/wiki/Grep">Grep</a> and <a href="https://en.wikipedia.org/wiki/AWK_programming_language">Awk</a> and is <a href="http://uuner.doslash.org/forfun/">surprisingly powerful</a>.</p>
+
+<p>Anyway, I need to edit a line in a file then add a block of code at the end.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cp -v /etc/ssh/sshd_config{,.dist}
+</span><span class='line'>sed -i ''/^Subsystem/s#/usr/libexec/openssh/sftp-server#internal-sftp#g' \ 
+</span><span class='line'>    /etc/ssh/sshd_config</span></code></pre></td></tr></table></div></figure>
+
+
+<p>First line obviously is a contracted cp line which puts the suffix <em>.dist</em> on the copy.</p>
+
+<p>The basic idea is that it runs through the file (/etc/ssh/sshd_config) and looks for any line that starts with &ldquo;Subsystem&rdquo; (<code>/^Subsystem/</code>). If it finds a line that matches it then will perform a &ldquo;substituion&rdquo; (<code>/s#</code>). The next 2 blocks tell it what the substitution will be in the order &ldquo;#From#To#&rdquo;. The reason for  the change from <code>/</code> to <code>#</code> is because of the / in the path name (thanks to <a href="http://www.reddit.com/user/z0nk">Z0nk</a>  for reminding me that you can use arbitary seperators). The &ldquo;#g&rdquo; tells Sed to perform the substituion on every instance it finds on the line, rather than just the first one. It is completely superfluous in this example, but I tend to put it in from force of habit. Finally the &ldquo;-i&rdquo; tells Sed to perform the edit in place, rather than outputing to Stdout.</p>
+
+<p>The next bit is a bit cleverer. With a single command I want to add a block of text to the file.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat &lt;&lt;EOF | while read inrec; do echo $inrec &gt;&gt; /etc/ssh/sshd_config; done
+</span><span class='line'>Match Group transfer
+</span><span class='line'>ChrootDirectory /var/local/
+</span><span class='line'>ForceCommmand internal-sftp
+</span><span class='line'>X11Forwarding no
+</span><span class='line'>AllowTcpForwarding no
+</span><span class='line'>
+</span><span class='line'>EOF</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here <code>cat &lt;&lt;EOF</code> tells it send everything you type to Stdout until it sees the string EOF. This then gets piped to a <code>while</code> loop that appends each line of that Stdout to the file we want to extend (<em>/etc/ssh/sshd_config</em> in this case).</p>
+
+<p>Using these old tools and a bit of knowledge of how redirection works has enabled me to make a document that anyone who can copy/paste can follow. It is very easy for technical people to forget that not everyone has the knowledge we have. To us opening Vi is perfectly obvious, but to others maybe it isn&rsquo;t and they are not being paid enough to know. They are just being paid to follow a script. I may not like it, but it is the case &ndash; it also helped turn a boring documentation session into something a little more interesting. Which is nice!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-05T16:13:00+01:00" pubdate data-updated="true">Feb 5<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix/" data-via="" data-counturl="http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/01/21/trac-with-nginx-on-centos/" title="Previous Post: Trac with Nginx on Centos">&laquo; Trac with Nginx on Centos</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/06/how-much-should-you-spend-on-it/" title="Next Post: How much should you spend on IT">How much should you spend on IT &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/home-made-energy-drink/">Home-made Energy Drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/connect-to-fedora-19-with-freenx/">Connect to Fedora 19 with FreeNX</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/15/home-made-exercise-drink/">Home-made Exercise drink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/23/automated-glusterfs/">Automated GlusterFS</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/04/dell-announces-vrtx/">Dell Announces VRTX</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
