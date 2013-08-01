@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: puppet | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/puppet/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: puppet | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/puppet/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Automated GlusterFS]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/06/23/automated-glusterfs/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/06/23/automated-glusterfs/"/>
     <updated>2013-06-23T22:02:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/06/23/automated-glusterfs</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png">http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png</a>"> As I promised on Twitter, this is how I automate a GlusterFS deployment. I&rsquo;m making a few assumptions here:</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/06/23/automated-glusterfs</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png"> As I promised on Twitter, this is how I automate a GlusterFS deployment. I'm making a few assumptions here:</p>
 
 <!-- more -->
 
@@ -37,11 +37,11 @@
 </ul>
 
 
-<p><img class="<a" src="href="https://docs.google.com/drawings/d/1XA7GH3a4BL1uszFXrSsZjysi59Iinh-0RmhqdDbt7QQ/pub?w=673&amp;h=315">https://docs.google.com/drawings/d/1XA7GH3a4BL1uszFXrSsZjysi59Iinh-0RmhqdDbt7QQ/pub?w=673&amp;h=315</a>" title="&lsquo;simple gluster architecture&rsquo;" ></p>
+<p><img src="https://docs.google.com/drawings/d/1XA7GH3a4BL1uszFXrSsZjysi59Iinh-0RmhqdDbt7QQ/pub?w=673&amp;h=315" title="'simple gluster architecture'" ></p>
 
 <p>The diagram above shows the basic layout of what to start from in terms of hardware. In terms of software, you just need a basic CentOS 6 install and to have Puppet working.</p>
 
-<p>I use a pair of Puppet modules (both in the Forge): <a href="http://forge.puppetlabs.com/thias/glusterfs">thias/glusterfs</a> and <a href="http://forge.puppetlabs.com/puppetlabs/lvm">puppetlabs/lvm</a>. The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of &ldquo;do one job well&rdquo;  holds up for Puppet modules as well. You will also need my <a href="https://github.com/chriscowley/puppet-yumrepos">yumrepos</a> module.</p>
+<p>I use a pair of Puppet modules (both in the Forge): <a href="http://forge.puppetlabs.com/thias/glusterfs">thias/glusterfs</a> and <a href="http://forge.puppetlabs.com/puppetlabs/lvm">puppetlabs/lvm</a>. The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of "do one job well"  holds up for Puppet modules as well. You will also need my <a href="https://github.com/chriscowley/puppet-yumrepos">yumrepos</a> module.</p>
 
 <p>Clone those 3 modules into your modules directory:</p>
 
@@ -56,15 +56,15 @@ puppet module install thias/glusterfs --version 0.0.3
 
 <p>```
 class basenode {
-  class { &lsquo;yumrepos&rsquo;: }
-  class { &lsquo;yumrepos::epel&rsquo;: }
+  class { 'yumrepos': }
+  class { 'yumrepos::epel': }
 }</p>
 
 <p>class glusternode {
-  class { &lsquo;basenode&rsquo;: }
-  class { &lsquo;yumrepos::gluster&rsquo;: }</p>
+  class { 'basenode': }
+  class { 'yumrepos::gluster': }</p>
 
-<p>  volume_group { &ldquo;vg0&rdquo;:</p>
+<p>  volume_group { "vg0":</p>
 
 <pre><code>ensure =&gt; present,
 physical_volumes =&gt; "/dev/sdb",
@@ -72,13 +72,13 @@ require =&gt; Physical_volume["/dev/sdb"]
 </code></pre>
 
 <p>  }
-  physical_volume { &ldquo;/dev/sdb&rdquo;:</p>
+  physical_volume { "/dev/sdb":</p>
 
 <pre><code>ensure =&gt; present
 </code></pre>
 
 <p>  }
-  logical_volume { &ldquo;gv0&rdquo;:</p>
+  logical_volume { "gv0":</p>
 
 <pre><code>ensure =&gt; present,
 require =&gt; Volume_group['vg0'],
@@ -87,16 +87,16 @@ size =&gt; "7G",
 </code></pre>
 
 <p>  }
-  file { [ &lsquo;/export&rsquo;, &lsquo;/export/gv0&rsquo;]:</p>
+  file { [ '/export', '/export/gv0']:</p>
 
 <pre><code>seltype =&gt; 'usr_t',
 ensure =&gt; directory,
 </code></pre>
 
 <p>  }
-  package { &lsquo;xfsprogs&rsquo;: ensure => installed
+  package { 'xfsprogs': ensure => installed
   }
-  filesystem { &ldquo;/dev/vg0/gv0&rdquo;:</p>
+  filesystem { "/dev/vg0/gv0":</p>
 
 <pre><code>ensure =&gt; present,
 fs_type =&gt; "xfs",
@@ -106,7 +106,7 @@ require =&gt; [Package['xfsprogs'], Logical_volume['gv0'] ],
 
 <p>  }</p>
 
-<p>  mount { &lsquo;/export/gv0&rsquo;:</p>
+<p>  mount { '/export/gv0':</p>
 
 <pre><code>device =&gt; '/dev/vg0/gv0',
 fstype =&gt; 'xfs',
@@ -116,7 +116,7 @@ require =&gt; [ Filesystem['/dev/vg0/gv0'], File['/export/gv0'] ],
 </code></pre>
 
 <p>  }
-  class { &lsquo;glusterfs::server&rsquo;:</p>
+  class { 'glusterfs::server':</p>
 
 <pre><code>peers =&gt; $::hostname ? {
   'gluster1' =&gt; '192.168.1.38', # Note these are the IPs of the other nodes
@@ -125,7 +125,7 @@ require =&gt; [ Filesystem['/dev/vg0/gv0'], File['/export/gv0'] ],
 </code></pre>
 
 <p>  }
-  glusterfs::volume { &lsquo;gv0&rsquo;:</p>
+  glusterfs::volume { 'gv0':</p>
 
 <pre><code>create_options =&gt; 'replica 2 192.168.1.38:/export/gv0 192.168.1.84:/export/gv0',
 require =&gt; Mount['/export/gv0'],
@@ -134,10 +134,10 @@ require =&gt; Mount['/export/gv0'],
 <p>  }
 }</p>
 
-<p>node &lsquo;gluster1&rsquo; {
+<p>node 'gluster1' {
   include glusternode
-  file { &lsquo;/var/www&rsquo;: ensure => directory }
-  glusterfs::mount { &lsquo;/var/www&rsquo;:</p>
+  file { '/var/www': ensure => directory }
+  glusterfs::mount { '/var/www':</p>
 
 <pre><code>device =&gt; $::hostname ? {
   'gluster1' =&gt; '192.168.1.84:/gv0',
@@ -147,10 +147,10 @@ require =&gt; Mount['/export/gv0'],
 <p>  }
 }</p>
 
-<p>node &lsquo;gluster2&rsquo; {
+<p>node 'gluster2' {
   include glusternode
-  file { &lsquo;/var/www&rsquo;: ensure => directory }
-  glusterfs::mount { &lsquo;/var/www&rsquo;:</p>
+  file { '/var/www': ensure => directory }
+  glusterfs::mount { '/var/www':</p>
 
 <pre><code>device =&gt; $::hostname ? {
   'gluster2' =&gt; '192.168.1.38:/gv0',
@@ -169,8 +169,8 @@ require =&gt; Mount['/export/gv0'],
 <li> Configures LVM
 
 <ul>
-<li>Defines the Volume Group &ldquo;vg0&rdquo; with the Physical Volume <code>/dev/sdb</code></li>
-<li>Creates a Logical Volume &ldquo;gv0&rdquo; for GlusterFS use and make it 7GB</li>
+<li>Defines the Volume Group "vg0" with the Physical Volume <code>/dev/sdb</code></li>
+<li>Creates a Logical Volume "gv0" for GlusterFS use and make it 7GB</li>
 </ul>
 </li>
 <li> Configures the file system
@@ -198,7 +198,7 @@ require =&gt; Mount['/export/gv0'],
 <p>A multi-petabyte scale-out storage system is pretty useless if the data cannot be read by anything. So lets use those nodes and mount the volume. This could also be a separate node (but once again I am being lazy) the process will be exactly the same.</p>
 
 <ul>
-<li> Create a mount point for it ( `file {&lsquo;/var/www&rsquo;: ensure => directory }</li>
+<li> Create a mount point for it ( `file {'/var/www': ensure => directory }</li>
 <li> Define your <code>glusterfs::mount</code> using any of the hosts in the cluster.</li>
 </ul>
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: linux | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: linux | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Connect to Fedora 19 with FreeNX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/08/01/connect-to-fedora-19-with-freenx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/08/01/connect-to-fedora-19-with-freenx/"/>
     <updated>2013-08-01T10:17:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/08/01/connect-to-fedora-19-with-freenx</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://i.imgur.com/Z8LFhPUl.png">http://i.imgur.com/Z8LFhPUl.png</a>" width="200" height="150"> FreeNX is a great remote desktop protocol. I find it more responsive than VNC and it uses less bandwidth. The biggest advantage though (in my eyes) is that it uses SSH to do the authentication. With VNC, each user has to arrange another password to connect to their VNC session.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/08/01/connect-to-fedora-19-with-freenx</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/Z8LFhPUl.png" width="200" height="150"> FreeNX is a great remote desktop protocol. I find it more responsive than VNC and it uses less bandwidth. The biggest advantage though (in my eyes) is that it uses SSH to do the authentication. With VNC, each user has to arrange another password to connect to their VNC session.</p>
 
 <!-- more -->
 
@@ -50,9 +50,9 @@ COMMAND_START_GNOME=mate-session
   
   <entry>
     <title type="html"><![CDATA[Bamboo Invoice on Centos with Nginx]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/"/>
     <updated>2013-04-29T21:16:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx</id>
     <content type="html"><![CDATA[<p>BambooInvoice is free Open Source invoicing software intended for small businesses and independent contractors. It is easy to use and creates pretty good looking invoices.</p>
 
 <!-- more -->
@@ -60,7 +60,7 @@ COMMAND_START_GNOME=mate-session
 
 <p>It is a simple PHP application that is based on the CodeIgniter framework. This means it is really simple to install on a typically LAMP stack. I however use Nginx and could not find any notes on how to configure it. It is pretty typical you can get most of the way by reading any of the Nginx howto documents on the web. Personally, for PHP apps, I use PHP-FPM, so you could use <a href="http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-centos-6.4">this on Howtoforge</a> to get most of the way. That will get you a working Nginx, PHP and MySQL system.</p>
 
-<p>Download the install file from [<a href="http://bambooinvoice.org/">http://bambooinvoice.org/</a>] an unzip is in your www folder:</p>
+<p>Download the install file from [http://bambooinvoice.org/] an unzip is in your www folder:</p>
 
 <p><code>bash
 cd /var/www
@@ -80,22 +80,22 @@ exit
 <p>Now you can edit the config files to point at the database:</p>
 
 <p>```php /var/www/bambooinvoices/bamboo_system_files/application/config/database.php
-&lt;?php  if (!defined(&lsquo;BASEPATH&rsquo;)) exit(&lsquo;No direct script access allowed&rsquo;);
-$active_group = &lsquo;default&rsquo;;</p>
+&lt;?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+$active_group = 'default';</p>
 
-<p>$db[&lsquo;default&rsquo;][&lsquo;hostname&rsquo;] = &lsquo;localhost&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;username&rsquo;] = &lsquo;bambooinvoice&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;password&rsquo;] = &lsquo;bambooinvoice&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;database&rsquo;] = &lsquo;bambooinvoice&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;dbdriver&rsquo;] = &lsquo;mysql&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;dbprefix&rsquo;] = &lsquo;bamboo_&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;active_r&rsquo;] = TRUE;
-$db[&lsquo;default&rsquo;][&lsquo;pconnect&rsquo;] = FALSE;
-$db[&lsquo;default&rsquo;][&lsquo;db_debug&rsquo;] = TRUE;
-$db[&lsquo;default&rsquo;][&lsquo;cache_on&rsquo;] = FALSE;
-$db[&lsquo;default&rsquo;][&lsquo;cachedir&rsquo;] = &lsquo;&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;char_set&rsquo;] = &lsquo;utf8&rsquo;;
-$db[&lsquo;default&rsquo;][&lsquo;dbcollat&rsquo;] = &lsquo;utf8_general_ci&rsquo;;
+<p>$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'bambooinvoice';
+$db['default']['password'] = 'bambooinvoice';
+$db['default']['database'] = 'bambooinvoice';
+$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbprefix'] = 'bamboo_';
+$db['default']['active_r'] = TRUE;
+$db['default']['pconnect'] = FALSE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
 ?>
 ```</p>
 
@@ -162,9 +162,9 @@ location ~ /\. {
   
   <entry>
     <title type="html"><![CDATA[Writeable TFTP Server On CentOS]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/03/25/writeable-tftp-server-on-centos/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/03/25/writeable-tftp-server-on-centos/"/>
     <updated>2013-03-25T15:45:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/03/25/writeable-tftp-server-on-centos</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/03/25/writeable-tftp-server-on-centos</id>
     <content type="html"><![CDATA[<p>Well this caught me out for an embarassingly long time. There are <a href="http://blog.penumbra.be/tag/tftp/">loads</a> <a href="http://www.question-defense.com/2008/11/13/linux-setup-tftp-server-on-centos">of</a> <a href="http://wiki.centos.org/EdHeron/PXESetup">examples</a> of setting up a TFTP server on the web. The vast majority of them assume that you are using them read-only for PXE booting.</p>
 
 <!-- more -->
@@ -211,7 +211,7 @@ chmod 777 /var/lib/tftpboot
 setsebool -P tftp_anon_write 1
 </code></p>
 
-<p>Of course you&rsquo;ll also need to open up the firewall. So add the following line to <code>/etc/sysconfig/iptables</code>:</p>
+<p>Of course you'll also need to open up the firewall. So add the following line to <code>/etc/sysconfig/iptables</code>:</p>
 
 <p><code>
 -A INPUT -m state --state NEW -m udp -p udp -m udp --dport 69 -j ACCEPT
@@ -236,23 +236,23 @@ tftp localhost -c put test
   
   <entry>
     <title type="html"><![CDATA[In praise of old school UNIX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/02/05/in-praise-of-old-school-unix/"/>
     <updated>2013-02-05T16:13:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/02/05/in-praise-of-old-school-unix</id>
     <content type="html"><![CDATA[<p>What am I doing today? Documentation that is what. I am writing a document on how to do <a href="http://www.chriscowley.me.uk/blog/2012/11/19/sftp-chroot-on-centos/">this</a>. To any Linux user it is a very simple process and I could just give them a link to my own website.</p>
 
 <!--more-->
 
 
-<p>I am not writing this for a techinical audience though. The people who are going to perform this work will be the &lsquo;Level 1 operatives&rsquo;. This translates roughly to &ldquo;anyone we can find on the street corners of some Far East city&rdquo;. If I tell them to press the red button labelled &ldquo;press me&rdquo; and it turns out to be orange, they will stop. I cannot assume the ability to edit a file in Vi. How can you work around this, well you need to make everything a copy and paste operation. This is easily done in Bash thanks to IO redirection and of course Sed.</p>
+<p>I am not writing this for a techinical audience though. The people who are going to perform this work will be the 'Level 1 operatives'. This translates roughly to "anyone we can find on the street corners of some Far East city". If I tell them to press the red button labelled "press me" and it turns out to be orange, they will stop. I cannot assume the ability to edit a file in Vi. How can you work around this, well you need to make everything a copy and paste operation. This is easily done in Bash thanks to IO redirection and of course Sed.</p>
 
 <p>Now, a brief recap may be in order, as there are some perfectly knowledgable Linux users who do not know what Sed is. Really, one of them sits behind me. Sed stands for Stream EDitor, and it parses text and applies transformations to it. It was one of the first UNIX utilities. It kind of sits between <a href="https://en.wikipedia.org/wiki/Grep">Grep</a> and <a href="https://en.wikipedia.org/wiki/AWK_programming_language">Awk</a> and is <a href="http://uuner.doslash.org/forfun/">surprisingly powerful</a>.</p>
 
 <p>Anyway, I need to edit a line in a file then add a block of code at the end.</p>
 
-<p>`&ldquo;
+<p>```
 cp -v /etc/ssh/sshd_config{,.dist}
-sed -i &rdquo;/^Subsystem/s#/usr/libexec/openssh/sftp-server#internal-sftp#g' \</p>
+sed -i ''/^Subsystem/s#/usr/libexec/openssh/sftp-server#internal-sftp#g' \</p>
 
 <pre><code>/etc/ssh/sshd_config
 </code></pre>
@@ -261,7 +261,7 @@ sed -i &rdquo;/^Subsystem/s#/usr/libexec/openssh/sftp-server#internal-sftp#g' \<
 
 <p>First line obviously is a contracted cp line which puts the suffix <em>.dist</em> on the copy.</p>
 
-<p>The basic idea is that it runs through the file (/etc/ssh/sshd_config) and looks for any line that starts with &ldquo;Subsystem&rdquo; (<code>/^Subsystem/</code>). If it finds a line that matches it then will perform a &ldquo;substituion&rdquo; (<code>/s#</code>). The next 2 blocks tell it what the substitution will be in the order &ldquo;#From#To#&rdquo;. The reason for  the change from <code>/</code> to <code>#</code> is because of the / in the path name (thanks to <a href="http://www.reddit.com/user/z0nk">Z0nk</a>  for reminding me that you can use arbitary seperators). The &ldquo;#g&rdquo; tells Sed to perform the substituion on every instance it finds on the line, rather than just the first one. It is completely superfluous in this example, but I tend to put it in from force of habit. Finally the &ldquo;-i&rdquo; tells Sed to perform the edit in place, rather than outputing to Stdout.</p>
+<p>The basic idea is that it runs through the file (/etc/ssh/sshd_config) and looks for any line that starts with "Subsystem" (<code>/^Subsystem/</code>). If it finds a line that matches it then will perform a "substituion" (<code>/s#</code>). The next 2 blocks tell it what the substitution will be in the order "#From#To#". The reason for  the change from <code>/</code> to <code>#</code> is because of the / in the path name (thanks to <a href="http://www.reddit.com/user/z0nk">Z0nk</a>  for reminding me that you can use arbitary seperators). The "#g" tells Sed to perform the substituion on every instance it finds on the line, rather than just the first one. It is completely superfluous in this example, but I tend to put it in from force of habit. Finally the "-i" tells Sed to perform the edit in place, rather than outputing to Stdout.</p>
 
 <p>The next bit is a bit cleverer. With a single command I want to add a block of text to the file.</p>
 
@@ -278,21 +278,21 @@ AllowTcpForwarding no</p>
 
 <p>Here <code>cat &lt;&lt;EOF</code> tells it send everything you type to Stdout until it sees the string EOF. This then gets piped to a <code>while</code> loop that appends each line of that Stdout to the file we want to extend (<em>/etc/ssh/sshd_config</em> in this case).</p>
 
-<p>Using these old tools and a bit of knowledge of how redirection works has enabled me to make a document that anyone who can copy/paste can follow. It is very easy for technical people to forget that not everyone has the knowledge we have. To us opening Vi is perfectly obvious, but to others maybe it isn&rsquo;t and they are not being paid enough to know. They are just being paid to follow a script. I may not like it, but it is the case &ndash; it also helped turn a boring documentation session into something a little more interesting. Which is nice!</p>
+<p>Using these old tools and a bit of knowledge of how redirection works has enabled me to make a document that anyone who can copy/paste can follow. It is very easy for technical people to forget that not everyone has the knowledge we have. To us opening Vi is perfectly obvious, but to others maybe it isn't and they are not being paid enough to know. They are just being paid to follow a script. I may not like it, but it is the case - it also helped turn a boring documentation session into something a little more interesting. Which is nice!</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Trac with Nginx on Centos]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/01/21/trac-with-nginx-on-centos/"/>
     <updated>2013-01-21T11:53:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/01/21/trac-with-nginx-on-centos</id>
     <content type="html"><![CDATA[<p><a href="tac.edgewall.org">Trac</a> is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.</p>
 
 <!-- more -->
 
 
-<p>What Nginx does do extremely well is Proxy stuff. Use this with Trac&rsquo;s built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac&rsquo;s server is not just for dev (a la WEBrick). It is fine for production use.</p>
+<p>What Nginx does do extremely well is Proxy stuff. Use this with Trac's built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac's server is not just for dev (a la WEBrick). It is fine for production use.</p>
 
 <p>The first thing to do (obviously) is to install Trac. I get it from Pip, although a slightly older version is in <a href="http://fedoraproject.org/wiki/EPEL">EPEL</a> if you prefer to stick with native packages.</p>
 
@@ -304,7 +304,7 @@ sudo -u trac trac-admin /var/local/trac/trac.example.com initenv
 sudo -u trac htpasswd -c /var/local/trac/.htpasswd example-realm chris
 </code></p>
 
-<p>Answer the little question it asks you &ndash; this includes the VCS you want to use, but that is for another day. I use the TracGit plugin to link to my Git repos.</p>
+<p>Answer the little question it asks you - this includes the VCS you want to use, but that is for another day. I use the TracGit plugin to link to my Git repos.</p>
 
 <p>Create an init script (<code>/etc/init.d/trac</code>) that contains something like:</p>
 

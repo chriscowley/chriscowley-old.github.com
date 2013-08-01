@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Home-made Energy Drink]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/08/01/home-made-energy-drink/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/08/01/home-made-energy-drink/"/>
     <updated>2013-08-01T11:23:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/08/01/home-made-energy-drink</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/08/01/home-made-energy-drink</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg" width="200" height="300">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
 
 <p>Today I am going to share a very simple recipe for what I drink when I am cycling. I have some fairly simple requirements for this.</p>
@@ -45,7 +45,7 @@
 
 <p>I use  500ml bottles from my <a href="http://www.laboutiqueducycle.fr/">LBS</a> that I chose for very technical reasons (they gave them to me free).</p>
 
-<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&rsquo;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
+<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&#8217;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
 
 <p>For each 500ml bottle I go for:</p>
 
@@ -65,9 +65,9 @@
   
   <entry>
     <title type="html"><![CDATA[Connect to Fedora 19 with FreeNX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/08/01/connect-to-fedora-19-with-freenx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/08/01/connect-to-fedora-19-with-freenx/"/>
     <updated>2013-08-01T10:17:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/08/01/connect-to-fedora-19-with-freenx</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/08/01/connect-to-fedora-19-with-freenx</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/Z8LFhPUl.png" width="200" height="150"> FreeNX is a great remote desktop protocol. I find it more responsive than VNC and it uses less bandwidth. The biggest advantage though (in my eyes) is that it uses SSH to do the authentication. With VNC, each user has to arrange another password to connect to their VNC session.</p>
 
 <!-- more -->
@@ -103,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[Home-made Exercise drink]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/07/15/home-made-exercise-drink/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/07/15/home-made-exercise-drink/"/>
     <updated>2013-07-15T14:52:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/07/15/home-made-exercise-drink</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/07/15/home-made-exercise-drink</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
 
 <p>Today I am going to share a very simple recipe for what I drink when I am cycling. I have some fairly simple requirements for this.</p>
@@ -133,7 +133,7 @@
 
 <p>I use  500ml bottles from my <a href="http://www.laboutiqueducycle.fr/">LBS</a> that I chose for very technical reasons (they gave them to me free).</p>
 
-<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&rsquo;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
+<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&#8217;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
 
 <p>For each 500ml bottle I go for:</p>
 
@@ -153,10 +153,10 @@
   
   <entry>
     <title type="html"><![CDATA[Automated GlusterFS]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/06/23/automated-glusterfs/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/06/23/automated-glusterfs/"/>
     <updated>2013-06-23T22:02:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/06/23/automated-glusterfs</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png"> As I promised on Twitter, this is how I automate a GlusterFS deployment. I&rsquo;m making a few assumptions here:</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/06/23/automated-glusterfs</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.hastexo.com/system/files/imagecache/sidebar/20120221105324808-f2df3ea3e3aeab8_250_0.png"> As I promised on Twitter, this is how I automate a GlusterFS deployment. I&#8217;m making a few assumptions here:</p>
 
 <!-- more -->
 
@@ -179,7 +179,7 @@
 
 <p>The diagram above shows the basic layout of what to start from in terms of hardware. In terms of software, you just need a basic CentOS 6 install and to have Puppet working.</p>
 
-<p>I use a pair of Puppet modules (both in the Forge): <a href="http://forge.puppetlabs.com/thias/glusterfs">thias/glusterfs</a> and <a href="http://forge.puppetlabs.com/puppetlabs/lvm">puppetlabs/lvm</a>. The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of &ldquo;do one job well&rdquo;  holds up for Puppet modules as well. You will also need my <a href="https://github.com/chriscowley/puppet-yumrepos">yumrepos</a> module.</p>
+<p>I use a pair of Puppet modules (both in the Forge): <a href="http://forge.puppetlabs.com/thias/glusterfs">thias/glusterfs</a> and <a href="http://forge.puppetlabs.com/puppetlabs/lvm">puppetlabs/lvm</a>. The GlusterFS module CAN do the LVM config, but that strikes me as not the best idea. The UNIX philosophy of &#8220;do one job well&#8221;  holds up for Puppet modules as well. You will also need my <a href="https://github.com/chriscowley/puppet-yumrepos">yumrepos</a> module.</p>
 
 <p>Clone those 3 modules into your modules directory:</p>
 
@@ -353,8 +353,8 @@
 <li> Configures LVM
 
 <ul>
-<li>Defines the Volume Group &ldquo;vg0&rdquo; with the Physical Volume <code>/dev/sdb</code></li>
-<li>Creates a Logical Volume &ldquo;gv0&rdquo; for GlusterFS use and make it 7GB</li>
+<li>Defines the Volume Group &#8220;vg0&#8221; with the Physical Volume <code>/dev/sdb</code></li>
+<li>Creates a Logical Volume &#8220;gv0&#8221; for GlusterFS use and make it 7GB</li>
 </ul>
 </li>
 <li> Configures the file system
@@ -382,7 +382,7 @@
 <p>A multi-petabyte scale-out storage system is pretty useless if the data cannot be read by anything. So lets use those nodes and mount the volume. This could also be a separate node (but once again I am being lazy) the process will be exactly the same.</p>
 
 <ul>
-<li> Create a mount point for it ( `file {&lsquo;/var/www&rsquo;: ensure => directory }</li>
+<li> Create a mount point for it ( `file {&#8216;/var/www&#8217;: ensure => directory }</li>
 <li> Define your <code>glusterfs::mount</code> using any of the hosts in the cluster.</li>
 </ul>
 
@@ -395,10 +395,10 @@
   
   <entry>
     <title type="html"><![CDATA[Dell Announces VRTX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/06/04/dell-announces-vrtx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/06/04/dell-announces-vrtx/"/>
     <updated>2013-06-04T22:15:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/06/04/dell-announces-vrtx</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG"> Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being &ldquo;the intersection of multiple lines&rdquo;, alluding to this being a mixture of a rack server, a blade server and a SAN.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/06/04/dell-announces-vrtx</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG"> Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being &#8220;the intersection of multiple lines&#8221;, alluding to this being a mixture of a rack server, a blade server and a SAN.</p>
 
 <!-- more -->
 
@@ -409,7 +409,7 @@
 
 <p>So what we have is a system that takes the same amount of space as it competitors and is less flexible. So why would you want it? In several cases I have wanted something that would give me a simple solution to run VMware (or similar) properly (i.e. shared storage and at least 2 nodes) and go in the corner of the office on a standard plug. The other solutions can do this with a bit of thought (more so with the Supermicro), but with the VRTX will do that out-of-the-box.</p>
 
-<p>If I could make 1 request of Dell, it would be to do a &ldquo;VRTX lite&rdquo; that drops the PCI-e slots and (perhaps) halves the number of disks and servers. To get a pair of computer servers and a small SAN in a 4 bay NAS sized box would be awesome for many a SMB branch office.</p>
+<p>If I could make 1 request of Dell, it would be to do a &#8220;VRTX lite&#8221; that drops the PCI-e slots and (perhaps) halves the number of disks and servers. To get a pair of computer servers and a small SAN in a 4 bay NAS sized box would be awesome for many a SMB branch office.</p>
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/16IlDQnIMrk?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -420,9 +420,9 @@
   
   <entry>
     <title type="html"><![CDATA[Jellybean and OpenVPN]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/05/30/jellybean-and-openvpn/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/05/30/jellybean-and-openvpn/"/>
     <updated>2013-05-30T22:14:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/05/30/jellybean-and-openvpn</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/05/30/jellybean-and-openvpn</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://openvpn.net/templates/telethra/img/ovpntech_logo-s.png">Setting up the server is well documented elsewhere, the <a href="http://openvpn.net/index.php/open-source/documentation/howto.html#quick">official howto</a> works nicely for me. I use a Virtual TUN network (routed) with clients connecting via UDP 1194, with all the network config pushed out by the server. Follow the howto and you will get that at the end.</p>
 
 <!-- more -->
@@ -430,19 +430,19 @@
 
 <p>When you create the key for your Jellybean client, create a PKCS12 certificate. This just means using the <code>build-key-pkcs12</code> script instead of <code>build-key</code>. Copy that .p12 key to the root of the SD card in your phone.</p>
 
-<p>Now you can make that certificate available for use by the OpenVPN client. Open <em>Setting &ndash;> Security &ndash;> Install from SD Card</em> and choose the .p12 file you just copied there.</p>
+<p>Now you can make that certificate available for use by the OpenVPN client. Open <em>Setting -> Security -> Install from SD Card</em> and choose the .p12 file you just copied there.</p>
 
-<p>Install <a href="http://code.google.com/p/ics-openvpn/">OpenVPN for Android/ICS-openvpn</a>. In that create a new profile with a suitable name. Under &ldquo;Basic&rdquo; configure the <em>Server Address</em> and choose your certificate.</p>
+<p>Install <a href="http://code.google.com/p/ics-openvpn/">OpenVPN for Android/ICS-openvpn</a>. In that create a new profile with a suitable name. Under &#8220;Basic&#8221; configure the <em>Server Address</em> and choose your certificate.</p>
 
-<p>The end&hellip;</p>
+<p>The end&#8230;</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Enable Developer Options on Android Jellybean]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/05/29/enable-developer-options-on-android-jellybean/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/05/29/enable-developer-options-on-android-jellybean/"/>
     <updated>2013-05-29T21:13:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/05/29/enable-developer-options-on-android-jellybean</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/05/29/enable-developer-options-on-android-jellybean</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://www.android.com/images/whatsnew/jb-new-logo.png" title="" >This was weird! I just updated my venerable ZTE Blade to Cyanogenmod 10.1 (Jellybean). I flashed it, then rebooted having completely forgotten to to install GApps. No problem, reboot into Clockmod Recovery and install them. Promlem: no option to reboot to recovery.</p>
 
 <!-- more -->
@@ -451,7 +451,7 @@
 <p>It turns out that you need to enable <em>Advanced reboot</em> in the *Developer Options. Problem where are those options. In Jellybean 4.2 they are hidden.</p>
 
 <ul>
-<li>Open up <em>Settings</em> &ndash;> <em>About Phone</em></li>
+<li>Open up <em>Settings</em> -> <em>About Phone</em></li>
 <li>Find the entry for <em>Build number</em></li>
 <li>Tap on it 7 times (honest), after the 3rd it will start to count down.</li>
 </ul>
@@ -465,10 +465,10 @@
   
   <entry>
     <title type="html"><![CDATA[EMC ViPR thoughts]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/05/13/emc-vipr-thoughts/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/05/13/emc-vipr-thoughts/"/>
     <updated>2013-05-13T21:45:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/05/13/emc-vipr-thoughts</id>
-    <content type="html"><![CDATA[<p>I have been a little slow on the uptake on this one. I would like to say it is because I was carefully digesting the information, but that is not true; the reality is that I have just had 2 5 day weekends in 2 weeks :&ndash;).</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/05/13/emc-vipr-thoughts</id>
+    <content type="html"><![CDATA[<p>I have been a little slow on the uptake on this one. I would like to say it is because I was carefully digesting the information, but that is not true; the reality is that I have just had 2 5 day weekends in 2 weeks :-).</p>
 
 <!-- more -->
 
@@ -479,11 +479,11 @@
 <li><a href="http://virtualgeek.typepad.com/virtual_geek/2013/05/storage-virtualization-platform-re-imagined.html">Chad Sakac</a> has really good and deep, but long.</li>
 <li><a href="http://chucksblog.emc.com/chucks_blog/2013/05/introducing-emc-vipr-a-breathtaking-approach-to-software-defined-storage.html">Chuck Hollis</a> is nowhere near as technical but (as is normal for Chuck) sells it beautifully</li>
 <li><a href="http://blog.scottlowe.org/2013/05/06/very-early-thoughts-about-emc-vipr/">Scott Lowe</a> has an excellent overview</li>
-<li><a href="http://h30507.www3.hp.com/t5/Around-the-Storage-Block-Blog/ViPR-or-Vapor-The-Software-Defined-Storage-saga-continues/ba-p/138013?utm_source=feedly#.UZCd_covj3w">Kate Davies</a> gives HP&rsquo;s take on it, which I sort of agree with, but not completely. As she says, the StoreAll VSA is not really in the same market, but I think it is the closest thing HP have so comparisons will always be drawn.</li>
+<li><a href="http://h30507.www3.hp.com/t5/Around-the-Storage-Block-Blog/ViPR-or-Vapor-The-Software-Defined-Storage-saga-continues/ba-p/138013?utm_source=feedly#.UZCd_covj3w">Kate Davies</a> gives HP&#8217;s take on it, which I sort of agree with, but not completely. As she says, the StoreAll VSA is not really in the same market, but I think it is the closest thing HP have so comparisons will always be drawn.</li>
 </ul>
 
 
-<p>ViPR is EMC&rsquo;s response to two major storage problems:
+<p>ViPR is EMC&#8217;s response to two major storage problems:
 1.   Storage is missing some sort of abstraction layer, particularly for management (the Control Plane).
 1.   There is more to storage than NFS and iSCSI. As well as NAS/SAN we now have multiple forms of object stores, plus important non-POSIX file systems such as HDFS.</p>
 
@@ -495,19 +495,19 @@
 
 <p>A lot of the management tools in ViPR are already in Openstack Cinder, which supports a much wider range of backends than ViPR at present. In that vendors have a completely open source management layer to develop against. Why would they sell their souls to a competitor? Simple, they will not. EMC exclusive shops will find ViPR to be an excellent way integrating their storage with a DevOps style workflow. Unfortunately my experience is that the sort of organizations that buy EMC (especially the big ones like VMAX) are not really ready for DevOps yet.</p>
 
-<p>Another feature that EMC has been touted is multi-protocol access to your data. Block volumes can be accessed via both iSCSI and FC protocols &ndash; nothing really clever there I&rsquo;m afraid. Dot Hill has been doing that for several years with the <a href="http://www.dothill.com/wp-content/uploads/2011/08/AssuredSAN-n-3920-3930-C-10.15.11.pdf">AssuredSAN 39x0</a> models (and by extension the the HP P2000 as well). That is also easy enough to do on commodity hardware using  <a href="http://linux-iscsi.org/wiki/Main_Page">LIO target</a> plus a whole lot more. On the file side, it gives you not only access to your data via both CIFS and NFS, but it does add object access to that. They touted this as being very clever, but once again you can already do this using well respected, production proven open source. Glusterfs has an object translator, so that covers that super clever feature. All the data abstraction features it has are already there in in the open source world. If you want object and NAS access to the same peta-byte storage system, you have it in both Glusterfs and Ceph, both of which can easily be managed by CM tools such as Puppet.</p>
+<p>Another feature that EMC has been touted is multi-protocol access to your data. Block volumes can be accessed via both iSCSI and FC protocols - nothing really clever there I&#8217;m afraid. Dot Hill has been doing that for several years with the <a href="http://www.dothill.com/wp-content/uploads/2011/08/AssuredSAN-n-3920-3930-C-10.15.11.pdf">AssuredSAN 39x0</a> models (and by extension the the HP P2000 as well). That is also easy enough to do on commodity hardware using  <a href="http://linux-iscsi.org/wiki/Main_Page">LIO target</a> plus a whole lot more. On the file side, it gives you not only access to your data via both CIFS and NFS, but it does add object access to that. They touted this as being very clever, but once again you can already do this using well respected, production proven open source. Glusterfs has an object translator, so that covers that super clever feature. All the data abstraction features it has are already there in in the open source world. If you want object and NAS access to the same peta-byte storage system, you have it in both Glusterfs and Ceph, both of which can easily be managed by CM tools such as Puppet.</p>
 
 <p><span class='pullquote-right' data-pullquote='To be a universal standard it would need to be an open (source) standard'>
-EMC has really pushed ViPR in the last couple of weeks, but it fails to impress me. This is a shame, because in general I like EMC&rsquo;s products. I don&rsquo;t like their marketing, but in their gear does just work. ViPR will probably do well with large EMC/NetApp shops, but it is by no means the ground-breaking product that EMC would have people believe (to be honest, I&rsquo;m not sure anything ever is). It can never be the universal gateway to manage our storage, it is too tied in to EMC. To be a universal standard it would need to be an open (source) standard, which is not really part of EMC&rsquo;s culture (with the exception of the awesome Razor).
+EMC has really pushed ViPR in the last couple of weeks, but it fails to impress me. This is a shame, because in general I like EMC&#8217;s products. I don&#8217;t like their marketing, but in their gear does just work. ViPR will probably do well with large EMC/NetApp shops, but it is by no means the ground-breaking product that EMC would have people believe (to be honest, I&#8217;m not sure anything ever is). It can never be the universal gateway to manage our storage, it is too tied in to EMC. To be a universal standard it would need to be an open (source) standard, which is not really part of EMC&#8217;s culture (with the exception of the awesome Razor).
 </span></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Bamboo Invoice on Centos with Nginx]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx/"/>
     <updated>2013-04-29T21:16:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/04/29/bamboo-invoice-on-centos-with-nginx</id>
     <content type="html"><![CDATA[<p>BambooInvoice is free Open Source invoicing software intended for small businesses and independent contractors. It is easy to use and creates pretty good looking invoices.</p>
 
 <!-- more -->
@@ -515,7 +515,7 @@ EMC has really pushed ViPR in the last couple of weeks, but it fails to impress 
 
 <p>It is a simple PHP application that is based on the CodeIgniter framework. This means it is really simple to install on a typically LAMP stack. I however use Nginx and could not find any notes on how to configure it. It is pretty typical you can get most of the way by reading any of the Nginx howto documents on the web. Personally, for PHP apps, I use PHP-FPM, so you could use <a href="http://www.howtoforge.com/installing-nginx-with-php5-and-php-fpm-and-mysql-support-on-centos-6.4">this on Howtoforge</a> to get most of the way. That will get you a working Nginx, PHP and MySQL system.</p>
 
-<p>Download the install file from [<a href="http://bambooinvoice.org/">http://bambooinvoice.org/</a>] an unzip is in your www folder:</p>
+<p>Download the install file from [http://bambooinvoice.org/] an unzip is in your www folder:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -685,15 +685,15 @@ EMC has really pushed ViPR in the last couple of weeks, but it fails to impress 
   
   <entry>
     <title type="html"><![CDATA[Using Hiera with Puppet]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/04/11/using-hiera-with-puppet/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/04/11/using-hiera-with-puppet/"/>
     <updated>2013-04-11T20:24:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/04/11/using-hiera-with-puppet</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/04/11/using-hiera-with-puppet</id>
     <content type="html"><![CDATA[<p>Using Hiera with Puppet is something I have struggled with a bit. I could see the benefits, namely decoupling my site configuration from my logic. However, for some reason I struggled a bit to really get my head around it. This was compounded by it being quite new (only really integrated in Puppet 3), so the docs are  little lacking.</p>
 
 <!-- more -->
 
 
-<p>There is some though, the <a href="http://docs.puppetlabs.com/hiera/latest/">documentation on PuppetLab&rsquo;s site</a> is excellent, but a bit light. It explains the principles well, but is a little limited in real-world examples. Probably the best resource I found was Kelsey Hightower&rsquo;s excellent presentation at <a href="http://youtu.be/z9TK-gUNFHk">PuppetConf 2012</a>:</p>
+<p>There is some though, the <a href="http://docs.puppetlabs.com/hiera/latest/">documentation on PuppetLab&#8217;s site</a> is excellent, but a bit light. It explains the principles well, but is a little limited in real-world examples. Probably the best resource I found was Kelsey Hightower&#8217;s excellent presentation at <a href="http://youtu.be/z9TK-gUNFHk">PuppetConf 2012</a>:</p>
 
 <p>I learnt a lot from that, but it would be nice if there was an equivalent written down. I suppose that is what I am aiming at here.</p>
 
@@ -728,7 +728,7 @@ EMC has really pushed ViPR in the last couple of weeks, but it fails to impress 
 </span><span class='line'>- common</span></code></pre></td></tr></table></div></figure>
 
 
-<p>This tells Hiera to use only the YAML backend &ndash; I do not like JSON because it always looks messy to me. It will look for the data in the folder <code>/etc/puppet/hieradata</code>. Finally it will look in that folder for a file called <clientcert>.yaml, then common.yaml. The process it uses to apply the values is explained very nicely in this image:
+<p>This tells Hiera to use only the YAML backend - I do not like JSON because it always looks messy to me. It will look for the data in the folder <code>/etc/puppet/hieradata</code>. Finally it will look in that folder for a file called <clientcert>.yaml, then common.yaml. The process it uses to apply the values is explained very nicely in this image:
 <img src="http://docs.puppetlabs.com/hiera/latest/images/hierarchy1.png"></p>
 
 <p>Next, create the file <code>/etc/puppet/hieradata/&lt;certname&gt;.yaml</code> that contains your NFS exports:</p>
@@ -745,7 +745,7 @@ EMC has really pushed ViPR in the last couple of weeks, but it fails to impress 
 
 <p>Now, checkout my NFS module from Github links above. If you are not on RHEL6 or similar (I use Centos personally) you will have to modify it as needed.</p>
 
-<p>There are 2 files that are really interesting here. The manifest file (manifests/server.pp) and the template to build the <code>/etc/exports</code> file (templates/exports.erb). We&rsquo;ll take apart the manifest, the template just iterates over the data passed to it from that.</p>
+<p>There are 2 files that are really interesting here. The manifest file (manifests/server.pp) and the template to build the <code>/etc/exports</code> file (templates/exports.erb). We&#8217;ll take apart the manifest, the template just iterates over the data passed to it from that.</p>
 
 <p>The first line creates an array variable called $exports from the Hiera data. Specifically, it looks for a key called <em>exports</em>. Hiera then goes through the hierarchy explained earlier looking for that key. In this case it will find it in the <certname>.yaml.</p>
 
@@ -787,16 +787,16 @@ EMC has really pushed ViPR in the last couple of weeks, but it fails to impress 
 
 <p>There is nothing especially Hiera&#8217;y about this, other than where the data in that array came from.</p>
 
-<p>The rest of the manifest deals with installing the packages and configuring services. Once again, nothing especially linked with Hiera, but hopefully it will be useful for anyone wanting to Puppetize their NFS servers &ndash; which of course you should be.</p>
+<p>The rest of the manifest deals with installing the packages and configuring services. Once again, nothing especially linked with Hiera, but hopefully it will be useful for anyone wanting to Puppetize their NFS servers - which of course you should be.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Stop the hate on software RAID]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/04/07/stop-the-hate-on-software-raid/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/04/07/stop-the-hate-on-software-raid/"/>
     <updated>2013-04-07T20:21:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/04/07/stop-the-hate-on-software-raid</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://chriscowley.github.io/images/NetappClustering.jpg">I&rsquo;ve had a another bee in my bonnet recently. Specifically, it has been to do with hardware vs software RAID, but I think it goes deeper than that. It started a couple of months back with a discussion on <a href="http://redd.it/18dp63">Reddit</a>. Some of the comments were:</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/04/07/stop-the-hate-on-software-raid</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.chriscowley.me.uk/images/NetappClustering.jpg">I&#8217;ve had a another bee in my bonnet recently. Specifically, it has been to do with hardware vs software RAID, but I think it goes deeper than that. It started a couple of months back with a discussion on <a href="http://redd.it/18dp63">Reddit</a>. Some of the comments were:</p>
 
 <blockquote><p>Get out, get out now.</p>
 
@@ -813,7 +813,7 @@ Jeezus.</p>
 <blockquote class="twitter-tweet"><p>So what are the modern arguments for / against hardware / software RAID? I don&#8217;t get out much. <a href="https://twitter.com/search/%23sysadmin">#sysadmin</a></p>&mdash; Matt Simmons (@standaloneSA) <a href="https://twitter.com/standaloneSA/status/319932013492703233">April 4, 2013</a></blockquote>
 
 
-<script async src="http://chriscowley.github.io//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="http://www.chriscowley.me.uk//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <!-- more -->
@@ -829,9 +829,9 @@ Jeezus.</p>
 </ul>
 
 
-<p>I am firmly of the opinion that hardware RAID cards should no longer exist. They are at best pointless and at worst a liability. Modern systems are so fast that there is no real performance hit. Also management is a lot easier; if you have a hardware array then you will need to load the manufacturer&rsquo;s utilities in order to manage it. By manage, I mean to be told when a disk has failed. On Linux, there is no guarantee that will work. There is a couple of vendors that require packages from RHEL4 to be installed on RHEL6 systems to install their tools. Also, they are invariable closed source, will most likely taint my kernel with binary blobs and generally cause a mess on my previously clean system. By contrast, using software RAID means that I can do all the management with trivial little scripts that can easily be integrated with any monitoring system that I choose to use.</p>
+<p>I am firmly of the opinion that hardware RAID cards should no longer exist. They are at best pointless and at worst a liability. Modern systems are so fast that there is no real performance hit. Also management is a lot easier; if you have a hardware array then you will need to load the manufacturer&#8217;s utilities in order to manage it. By manage, I mean to be told when a disk has failed. On Linux, there is no guarantee that will work. There is a couple of vendors that require packages from RHEL4 to be installed on RHEL6 systems to install their tools. Also, they are invariable closed source, will most likely taint my kernel with binary blobs and generally cause a mess on my previously clean system. By contrast, using software RAID means that I can do all the management with trivial little scripts that can easily be integrated with any monitoring system that I choose to use.</p>
 
-<p>I can understand why people are skeptical of software RAID. There have been performance reasons and practical reasons for it not to be trusted. I&rsquo;m not going to address the performance argument, suffice to say that RAID is now 25 years old &ndash; CPUs have moved on a lot in that time. I remember when the first Promise IDE controllers came out, that used a kind of pseudo-hardware RAID &ndash; it was not pretty. The preconceptions are compounded by the plethora of nasty controllers built in to consumer motherboards and (possibly worst of all) Window&rsquo;s built in RAID that was just bad.</p>
+<p>I can understand why people are skeptical of software RAID. There have been performance reasons and practical reasons for it not to be trusted. I&#8217;m not going to address the performance argument, suffice to say that RAID is now 25 years old - CPUs have moved on a lot in that time. I remember when the first Promise IDE controllers came out, that used a kind of pseudo-hardware RAID - it was not pretty. The preconceptions are compounded by the plethora of nasty controllers built in to consumer motherboards and (possibly worst of all) Window&#8217;s built in RAID that was just bad.</p>
 
 <p>The thing is, those days are now a long way behind us. For Linux there is absolutely no need for hardware RAID, even Windows will be just fine with an motherboard based RAID for its c: drive.</p>
 
@@ -841,20 +841,20 @@ In fact I would say that hardware RAID is a liability. You go to all that effort
 
 <p>There is definitely a time and place for an external array. If you are using virtualisation properly, you need shared storage. The best way to do that, 9 times out of 10, is with an external array. However, even that may well not be as it seems. There are some that still develop dedicated hardware and come out with exciting gear (HP 3Par and Hitachi Data Systems spring to mind). However, the majority of storage is now on Software.</p>
 
-<p>Let take a look at these things and see just how much &ldquo;hardware&rdquo; is actually involved.</p>
+<p>Let take a look at these things and see just how much &#8220;hardware&#8221; is actually involved.</p>
 
-<p>The EMC VMAX is a big, big black box of storage. Even the &ldquo;baby&rdquo; 10k one scales up to 1.5PB and 4 engines. The 40k will go up to 3PB and 8 engines. Look a little deeper (one line further on the spec sheet) and you find that what those engines are: quad Xeons (dual on the 10/20k). The great big bad VMAX is a bunch of standard x86 servers running funky software to do all the management and RAID calculations.</p>
+<p>The EMC VMAX is a big, big black box of storage. Even the &#8220;baby&#8221; 10k one scales up to 1.5PB and 4 engines. The 40k will go up to 3PB and 8 engines. Look a little deeper (one line further on the spec sheet) and you find that what those engines are: quad Xeons (dual on the 10/20k). The great big bad VMAX is a bunch of standard x86 servers running funky software to do all the management and RAID calculations.</p>
 
 <p><span class='pullquote-right' data-pullquote='since the Clariion CX4 EMC has been using Windows Storage Server'>
-Like its big brother, the VNX is also a pair of Xeon servers. Even more, it runs Windows. In fact since the Clariion CX4 EMC has been using Windows Storage Server (based on XP) Move along to EMC&rsquo;s other lines we find Isilion is nothing more than a big pile of Supermicro servers running (IIRC) FreeBSD.
+Like its big brother, the VNX is also a pair of Xeon servers. Even more, it runs Windows. In fact since the Clariion CX4 EMC has been using Windows Storage Server (based on XP) Move along to EMC&#8217;s other lines we find Isilion is nothing more than a big pile of Supermicro servers running (IIRC) FreeBSD.
 </span></p>
 
-<p>Netapp&rsquo;s famed FAS range similarly runs on commodity hardware,OnTAP is <a href="https://en.wikipedia.org/wiki/NetApp_filer">BSD</a> based.</p>
+<p>Netapp&#8217;s famed FAS range similarly runs on commodity hardware,OnTAP is <a href="https://en.wikipedia.org/wiki/NetApp_filer">BSD</a> based.</p>
 
 <p>The list goes on, Dell Compellent? When I looked at it in early 2012, it was still running on Supermicro dual Xeons. The plan was to move it to Dell R-series servers as soon as possible. They were doing validation at the time, I suspect the move is complete now. Reading between the lines, I came away with the impression that it runs on FreeBSD, but I do not know for sure. CoRAID use Supermicro servers, they unusually run Plan9 as their OS. HP StoreVirtual (formerly Lefthand) runs or Proliant Gen8 servers or VMware. In all these cases, there is no extra hardware involved.</p>
 
 <p><span class='pullquote-right' data-pullquote='The people that write the MD stack in the Linux kernel are not cowboys'>
-The people that write the MD stack in the Linux kernel are not cowboys. It has proved over and over again that is both stable and fast. I have trusted some of the most important data under my care to their software:  for many years the ERP system at <a href="http://www.snellgroup.com">Snell</a> has been running on MD devices quite happily. We found it much faster than the P410 cards in the DL360G5 servers that host it. Additionally, you do not need to load in any funky modules or utilities &ndash; everything you need to manage the devices is there in the distribution.
+The people that write the MD stack in the Linux kernel are not cowboys. It has proved over and over again that is both stable and fast. I have trusted some of the most important data under my care to their software:  for many years the ERP system at <a href="http://www.snellgroup.com">Snell</a> has been running on MD devices quite happily. We found it much faster than the P410 cards in the DL360G5 servers that host it. Additionally, you do not need to load in any funky modules or utilities - everything you need to manage the devices is there in the distribution.
 </span></p>
 
 <p>ZFS also recommends to bypass any RAID devices and let it do everything in software, as does Btrfs. With <em>Storage Spaces</em> in Server 2012 Microsoft is definitely angling towards software controlled storage as well.</p>
@@ -862,16 +862,16 @@ The people that write the MD stack in the Linux kernel are not cowboys. It has p
 <p>As with everything in IT, hardware is falling by the wayside in storage. Modern processors can do the processing so fast that there is no performance need for hardware in between your OS and the disks any more. The OS layers (Storage Spaces on Windows and especially MD/LVM on Linux) are so mature now that their reliability can be taken as a given. With the management advantages, there really is no technical reason to stick with hardware RAID. In fact the closer you can get the raw disks to your OS the better.</p>
 
 <p><span class='pullquote-right' data-pullquote='we need to know what is inside that magic black box, especially when it is in the spec sheet'>
-As I said at the start, the subject here is software vs hardware RAID, but my problem goes deeper than that particular argument. As technology professionals, we are technical people. We need to understand what is going on under the bonnet &ndash; that is our job! It may be fine for a vendor to pull the wool over a CFO&rsquo;s eyes, but we need to know what is inside that magic black box, especially when it is in the spec sheet.
+As I said at the start, the subject here is software vs hardware RAID, but my problem goes deeper than that particular argument. As technology professionals, we are technical people. We need to understand what is going on under the bonnet - that is our job! It may be fine for a vendor to pull the wool over a CFO&#8217;s eyes, but we need to know what is inside that magic black box, especially when it is in the spec sheet.
 </span></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Writeable TFTP Server On CentOS]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/03/25/writeable-tftp-server-on-centos/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/03/25/writeable-tftp-server-on-centos/"/>
     <updated>2013-03-25T15:45:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/03/25/writeable-tftp-server-on-centos</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/03/25/writeable-tftp-server-on-centos</id>
     <content type="html"><![CDATA[<p>Well this caught me out for an embarassingly long time. There are <a href="http://blog.penumbra.be/tag/tftp/">loads</a> <a href="http://www.question-defense.com/2008/11/13/linux-setup-tftp-server-on-centos">of</a> <a href="http://wiki.centos.org/EdHeron/PXESetup">examples</a> of setting up a TFTP server on the web. The vast majority of them assume that you are using them read-only for PXE booting.</p>
 
 <!-- more -->
@@ -929,7 +929,7 @@ As I said at the start, the subject here is software vs hardware RAID, but my pr
 </span><span class='line'>setsebool -P tftp_anon_write 1</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Of course you&rsquo;ll also need to open up the firewall. So add the following line to <code>/etc/sysconfig/iptables</code>:</p>
+<p>Of course you&#8217;ll also need to open up the firewall. So add the following line to <code>/etc/sysconfig/iptables</code>:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>-A INPUT -m state --state NEW -m udp -p udp -m udp --dport 69 -j ACCEPT</span></code></pre></td></tr></table></div></figure>
@@ -955,10 +955,10 @@ As I said at the start, the subject here is software vs hardware RAID, but my pr
   
   <entry>
     <title type="html"><![CDATA[What a boss owes their staff]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/03/18/what-a-boss-owes-their-staff/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/03/18/what-a-boss-owes-their-staff/"/>
     <updated>2013-03-18T20:47:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/03/18/what-a-boss-owes-their-staff</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://chriscowley.github.io/images/reputation-management-starts-with-trust.jpg"> I recently had a conversation on Twitter with my friend <a href="http://www.robborley.com/">Rob Borley</a> who runs a <a href="http://www.dootrix.com/">mobile startup</a>. He had asked what interesting perks he should be giving his <a href="https://twitter.com/bobscape/statuses/313610008535367680">staff</a>.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/03/18/what-a-boss-owes-their-staff</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.chriscowley.me.uk/images/reputation-management-starts-with-trust.jpg"> I recently had a conversation on Twitter with my friend <a href="http://www.robborley.com/">Rob Borley</a> who runs a <a href="http://www.dootrix.com/">mobile startup</a>. He had asked what interesting perks he should be giving his <a href="https://twitter.com/bobscape/statuses/313610008535367680">staff</a>.</p>
 
 <!-- more -->
 
@@ -967,7 +967,7 @@ As I said at the start, the subject here is software vs hardware RAID, but my pr
 My initial response was the standard IT answer. Training, certifications and a lab to play in, which they already have. I like to find the root cause of things, usually that means looking for the underlying reason something is broken. In this case I wanted to put a more positive spin on it. When you have a great work environment what is it that is at the root? The answer is simple: trust.
 </span></p>
 
-<p>By way of a silly example, if I were to put a cake in the middle of my son&rsquo;s classroom, I can guarantee that the majority of the cake will go into the mouths of a few, while most will probably not get any. Why? They are children, that is why. However, if I give it to his teacher then she will make sure that it gets evenly distributed to everyone. She, like your staff, is an adult and she behaves as such.</p>
+<p>By way of a silly example, if I were to put a cake in the middle of my son&#8217;s classroom, I can guarantee that the majority of the cake will go into the mouths of a few, while most will probably not get any. Why? They are children, that is why. However, if I give it to his teacher then she will make sure that it gets evenly distributed to everyone. She, like your staff, is an adult and she behaves as such.</p>
 
 <p><span class='pullquote-right' data-pullquote='if someone is going to sit there surfing Engadget all day, you are powerless to stop them'>
 The has been a lot in the news recently about remote-working. Chiefly because of the new Yahoo CEO <a href="http://allthingsd.com/20130222/physically-together-heres-the-internal-yahoo-no-work-from-home-memo-which-extends-beyond-remote-workers/">putting a stop</a> to it. I have to fall in line with what Tony Schwartz <a href="http://www.businessinsider.com/want-productive-employees-treat-them-like-adults-2013-3">wrote in response</a> to that on Business Insider. Basically, if you cannot trust your staff to work when they are not in the office, you have hired the wrong people. You cannot be watching them all the time, nor can middle-management once you are past the start-up stage. Basically, if someone is going to sit there surfing Engadget all day, you are powerless to stop them. However, they will not be delivering, so they have to go. Likewise I have had colleagues who everytime I looked at their screen were surfing Ebay, or the Register. We hardly ever discussed computers, we mostly discussed trains and bikes. We delivered however, so who cares what was in our browser window and conversation? I myself got pulled to one side one day by my old boss to ask why I was playing around with an ESX server. We had no VMware servers, nor did we have any plans to. My response was that it would help make me better at my job. A year later we started rolling out a VMware infrastructrue, a project which I lead because I had taken the time to learn stuff. My boss had <em>trusted</em> me that I was not wasting my time and it paid off for him because we did not have to get in expensive consultants.
@@ -977,26 +977,26 @@ The has been a lot in the news recently about remote-working. Chiefly because of
 Trust leads to everything else that we like about work. Allowing your staff to work from home whenever they want is a question of trust. Perhaps one of them is spending time learning how to program in <a href="http://golang.org/">Go</a> even though you are a Dot Net house. Let them do so, trust them that they are going to make themselves a better programmer.
 </span></p>
 
-<p>This stuff may pay off directly (as in my VMware example), may be it won&rsquo;t. If you let people work from home, maybe at times you will wonder what they are doing. You will however have a happier employee. If that employee has no desire to go anywhere else, but wants to deliver the best they can for your company then you can only win.</p>
+<p>This stuff may pay off directly (as in my VMware example), may be it won&#8217;t. If you let people work from home, maybe at times you will wonder what they are doing. You will however have a happier employee. If that employee has no desire to go anywhere else, but wants to deliver the best they can for your company then you can only win.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Thoughts on the shiney new VMAX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/03/01/thoughts-on-the-shiney-new-vmax/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/03/01/thoughts-on-the-shiney-new-vmax/"/>
     <updated>2013-03-01T15:21:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/03/01/thoughts-on-the-shiney-new-vmax</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://www.emc.com/R1/images/EMC_Image_C_1310593327367_header-image-vmax-10k.png"> I&rsquo;ve spent a significant amount of time recently swatting up on EMC&rsquo;s new <a href="http://chucksblog.emc.com/chucks_blog/2013/02/introducing-vmax-cloud-edition.html">VMAX Cloud Edition</a>. It has to be said that this looks like one of the most interesting storage announcements I have seen in a long time. In fact I have a project coming up that I think it may well be a perfect fit for.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/03/01/thoughts-on-the-shiney-new-vmax</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.emc.com/R1/images/EMC_Image_C_1310593327367_header-image-vmax-10k.png"> I&#8217;ve spent a significant amount of time recently swatting up on EMC&#8217;s new <a href="http://chucksblog.emc.com/chucks_blog/2013/02/introducing-vmax-cloud-edition.html">VMAX Cloud Edition</a>. It has to be said that this looks like one of the most interesting storage announcements I have seen in a long time. In fact I have a project coming up that I think it may well be a perfect fit for.</p>
 
 <!-- more -->
 
 
-<p>First a massive thanks to EMC&rsquo;s Matthew Yeager (@mpyeager) who answered a couple of questions I had. He really went the extra mile to clarify a couple of things and the <a href="http://www.youtube.com/watch?v=WoElTAevLDs">video</a> he made is well worth a watch. Also Martin Glassborow (@storagebod) has <a href="http://www.storagebod.com/wordpress/?p=1293">interesting things to say</a> as well.</p>
+<p>First a massive thanks to EMC&#8217;s Matthew Yeager (@mpyeager) who answered a couple of questions I had. He really went the extra mile to clarify a couple of things and the <a href="http://www.youtube.com/watch?v=WoElTAevLDs">video</a> he made is well worth a watch. Also Martin Glassborow (@storagebod) has <a href="http://www.storagebod.com/wordpress/?p=1293">interesting things to say</a> as well.</p>
 
-<p>This is a product that could put a lot of people out of a job. If you are the sort of person who likes to keep hold of your little castle&rsquo;s of knowledge then you will not like this from what I can see. Finally we are able to be truly customer focused, balancing cost, performance and capacity to give them exactly what they want. EMC claim this is a world first and to my knowledge they are right.</p>
+<p>This is a product that could put a lot of people out of a job. If you are the sort of person who likes to keep hold of your little castle&#8217;s of knowledge then you will not like this from what I can see. Finally we are able to be truly customer focused, balancing cost, performance and capacity to give them exactly what they want. EMC claim this is a world first and to my knowledge they are right.</p>
 
 <p><span class='pullquote-right' data-pullquote='With that amount of data the amount of art involved diminishes'>
-Storage architects put a lot of time and effort in to tweaking quotes and systems to balance price, capacity and performance for a given work load. However, most of this is just reading up on the best-practises for a given array and situation and applying them. There is nothing that clever to it &ndash; reading and practise is what it comes down to. However, it has alway been as much an art as a science because an individual architect does not have a very large dataset to refer to. On the other hand EMC have got 60 million hours of metrics across more than 7000 VMAX systems out in the field. With that amount of data the amount of art involved diminishes and it becomes purely a science.
+Storage architects put a lot of time and effort in to tweaking quotes and systems to balance price, capacity and performance for a given work load. However, most of this is just reading up on the best-practises for a given array and situation and applying them. There is nothing that clever to it - reading and practise is what it comes down to. However, it has alway been as much an art as a science because an individual architect does not have a very large dataset to refer to. On the other hand EMC have got 60 million hours of metrics across more than 7000 VMAX systems out in the field. With that amount of data the amount of art involved diminishes and it becomes purely a science.
 </span></p>
 
 <p>What you get is a <a href="http://www.emc.com/storage/symmetrix-vmax/vmax-10k.htm">VMAX 10k</a>, but instead of defining storage pools, tiering policies, RAID levels etc you balance 3 facters: Space, performance and cost. Need a certain performance level for a certain amount of space no matter the cost? Just dial it in and mail EMC a cheque. Have a certain budget, need a certain amount of space, but performance not a problem? Same again.</p>
@@ -1004,12 +1004,12 @@ Storage architects put a lot of time and effort in to tweaking quotes and system
 <p>No longer will we  be carefully balancing the number of SATA and FC spindles and the types of RAID level. No longer will be worrying about what percentage of our workload we need to keep on the SSD layer to assure the necessary number of IOPS. We will not even be calculating how much space we have after the RAID overheads.</p>
 
 <p><span class='pullquote-right' data-pullquote='Here we have the abilty to easily integrate a VMAX with the likes of OpenStack Cinder, Puppet, Libvirt, or whatever'>
-That is all very interesting, but so far it is just a new approach to the UI. It is an excellent approach, but nothing especially clever. One of things I gravitated towards was the white paper about integrating with <a href="http://www.emc.com/collateral/white-papers/h11468-vmax-cloud-edition-wp.pdf">vCloud</a>. Despite it being geared toward VMware (I wonder why? &ndash; not!) the principles equally apply to any situation where automation is required. I am a huge DevOps fan (Puppet in particular). Storage arrays have never been particularly automation friendly. In addition to the cloud portal, the VMAX CE also has a RESTful API. Now that is awesome! Here we have the abilty to easily integrate a VMAX with the likes of OpenStack Cinder, Puppet, Libvirt, or whatever you want.
+That is all very interesting, but so far it is just a new approach to the UI. It is an excellent approach, but nothing especially clever. One of things I gravitated towards was the white paper about integrating with <a href="http://www.emc.com/collateral/white-papers/h11468-vmax-cloud-edition-wp.pdf">vCloud</a>. Despite it being geared toward VMware (I wonder why? - not!) the principles equally apply to any situation where automation is required. I am a huge DevOps fan (Puppet in particular). Storage arrays have never been particularly automation friendly. In addition to the cloud portal, the VMAX CE also has a RESTful API. Now that is awesome! Here we have the abilty to easily integrate a VMAX with the likes of OpenStack Cinder, Puppet, Libvirt, or whatever you want.
 </span></p>
 
 <p>Finally <a href="http://virtualgeek.typepad.com">Chad Sakac</a> informs me that VMAX CE is just the first. EMC intend to roll this management style out to other product lines. Personally I think this would suit both Isilion and Atmos lines very nicely.</p>
 
-<p>I am really excited about this product. It brings a paradigm shift in storage management and automation. Also I am led to believe that the price is exceptional as well, to point that it seems EMC may even be pushing VNX down a market level (to where it should be perhaps?). I have been <a href="http://chriscowley.github.io/blog/2012/12/10/emc-extremio-thoughts/">a bit nasty</a> to EMC in the past, but recently they are doing some stuff that has really got me interested. This and <a href="https://github.com/puppetlabs/Razor">Razor</a> are 2 projects that are definitely worth keeping an eye on.</p>
+<p>I am really excited about this product. It brings a paradigm shift in storage management and automation. Also I am led to believe that the price is exceptional as well, to point that it seems EMC may even be pushing VNX down a market level (to where it should be perhaps?). I have been <a href="http://www.chriscowley.me.uk/blog/2012/12/10/emc-extremio-thoughts/">a bit nasty</a> to EMC in the past, but recently they are doing some stuff that has really got me interested. This and <a href="https://github.com/puppetlabs/Razor">Razor</a> are 2 projects that are definitely worth keeping an eye on.</p>
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/WoElTAevLDs" frameborder="0" allowfullscreen></iframe>
 
@@ -1018,32 +1018,32 @@ That is all very interesting, but so far it is just a new approach to the UI. It
   
   <entry>
     <title type="html"><![CDATA[The Linux to Storage]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/02/25/the-linux-to-storage/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/02/25/the-linux-to-storage/"/>
     <updated>2013-02-25T13:09:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/02/25/the-linux-to-storage</id>
-    <content type="html"><![CDATA[<p>Martin &ldquo;Storagebod&rdquo; Glassborow recently wrote an interesting article where he asked &ldquo;Who&rsquo;ll do a Linux to Storage?&rdquo;. As someone who is equal parts Storage and Linux, the same question runs around my head quite often. Not just that, but how to do it. It is safe to say that all the constituent parts are already in the Open Source Ecosystem. It just needs someone to pull them all together wrap them up in an integrated interface (be that a GUI, CLI, an API or all).</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/02/25/the-linux-to-storage</id>
+    <content type="html"><![CDATA[<p>Martin &#8220;Storagebod&#8221; Glassborow recently wrote an interesting article where he asked &#8220;Who&#8217;ll do a Linux to Storage?&#8221;. As someone who is equal parts Storage and Linux, the same question runs around my head quite often. Not just that, but how to do it. It is safe to say that all the constituent parts are already in the Open Source Ecosystem. It just needs someone to pull them all together wrap them up in an integrated interface (be that a GUI, CLI, an API or all).</p>
 
 <!--more -->
 
 
-<p>Linux, obviously, has excellent NFS support. Until recently it was a little lacking in terms of block support. <a href="http://sourceforge.net/projects/iscsitarget/">iSCSI Enterprise Target</a> is ok, but is not packaged for RHEL, which for most shops makes it a big no-no. Likewise <a href="http://stgt.sourceforge.net/">TGT</a> is not bad, I have certainly used it to to good effect, but administering it is a bit like pulling teeth. Additionally, neither are VMware certified and I am pretty sure that TGT at  least is missing a required feature for certification as well (may be persistent reservations). There is a third SCSI target in Linux though: <a href="http://www.linux-iscsi.org/">LIO Kernel Target</a> by Rising Tide Systems. This is a lot newer, but is already VMware Ready certified. Red Hat used it in RHEL6 for FCoE target support, but not for iSCSI. in RHEL7 they will be <a href="http://groveronline.com/2012/11/tgtd-lio-in-rhel-7/">using it for all block storage</a>. It has a much nicer interface than the other targets on Linux, using a very intuitive CLI, nice JSON config files and a rather handy API. Rising Tide are a bit of an unknown however, or at least I thought so. It turns our that both QNAP and Netgear use LIO Kernel Target in their larger devices &ndash; hence the VMware certification. In any case, Red Hat are behind it, although I think they are working on a fork of at least the CLI, so I think success is assured there. That solves the problem of block storage, be it iSCSI, Fibre-Channel, FCoE, Infiniband or even USB.</p>
+<p>Linux, obviously, has excellent NFS support. Until recently it was a little lacking in terms of block support. <a href="http://sourceforge.net/projects/iscsitarget/">iSCSI Enterprise Target</a> is ok, but is not packaged for RHEL, which for most shops makes it a big no-no. Likewise <a href="http://stgt.sourceforge.net/">TGT</a> is not bad, I have certainly used it to to good effect, but administering it is a bit like pulling teeth. Additionally, neither are VMware certified and I am pretty sure that TGT at  least is missing a required feature for certification as well (may be persistent reservations). There is a third SCSI target in Linux though: <a href="http://www.linux-iscsi.org/">LIO Kernel Target</a> by Rising Tide Systems. This is a lot newer, but is already VMware Ready certified. Red Hat used it in RHEL6 for FCoE target support, but not for iSCSI. in RHEL7 they will be <a href="http://groveronline.com/2012/11/tgtd-lio-in-rhel-7/">using it for all block storage</a>. It has a much nicer interface than the other targets on Linux, using a very intuitive CLI, nice JSON config files and a rather handy API. Rising Tide are a bit of an unknown however, or at least I thought so. It turns our that both QNAP and Netgear use LIO Kernel Target in their larger devices - hence the VMware certification. In any case, Red Hat are behind it, although I think they are working on a fork of at least the CLI, so I think success is assured there. That solves the problem of block storage, be it iSCSI, Fibre-Channel, FCoE, Infiniband or even USB.</p>
 
-<p>Another important building block in an enterprise storage system is some way of distributing the data for both redunancy and performance. Marin mentions <a href="http://ceph.com/">Ceph</a> which is an excellent system. Personally I would put my money on <a href="http://www.gluster.org/">GlusterFS</a> though. I have had slightly better performance from it. Red Hat bought Gluster about a year ago, and have put some serious development effort into it. As well as POSIX access via Fuse, it has Object storage for use with OpenStack, a native Qemu connector is coming in the next versions. Hadoop can also access it directly. There is also a very good Puppet module for it, which gets around one of Martin&rsquo;s critisms of Ceph.</p>
+<p>Another important building block in an enterprise storage system is some way of distributing the data for both redunancy and performance. Marin mentions <a href="http://ceph.com/">Ceph</a> which is an excellent system. Personally I would put my money on <a href="http://www.gluster.org/">GlusterFS</a> though. I have had slightly better performance from it. Red Hat bought Gluster about a year ago, and have put some serious development effort into it. As well as POSIX access via Fuse, it has Object storage for use with OpenStack, a native Qemu connector is coming in the next versions. Hadoop can also access it directly. There is also a very good Puppet module for it, which gets around one of Martin&#8217;s critisms of Ceph.</p>
 
-<p>Which brings me nicely to managing this theoretical system. Embedding Puppet in this sort of solution would also make sense. There will be need to a way of keep config sync&#8217;ed on all the nodes (I mentioned that this disruptive product will be scale-out didn&rsquo;t I? NO? OK, it will be &ndash; prediction for the day). Puppet does this already very well, so why re-invent the wheel.</p>
+<p>Which brings me nicely to managing this theoretical system. Embedding Puppet in this sort of solution would also make sense. There will be need to a way of keep config sync&#8217;ed on all the nodes (I mentioned that this disruptive product will be scale-out didn&#8217;t I? NO? OK, it will be - prediction for the day). Puppet does this already very well, so why re-invent the wheel.</p>
 
 <p>All this can sit on top of Btrfs allowing each node to have up to 16 exabytes of local storage. For now I am not convinced by it, at least on RHEL 6 as I have seen numerous kernel panics, nor did I have a huge amount of joy on Fedora 17, but there is no doubt that it will get there. Alternatively, there is always the combination of XFS and LVM. XFS is getting on a bit now, but it has been revived by Red Hat in recent years and it is a proven performer with plenty of life left in it yet.</p>
 
-<p>After all that, who do I think is ripe to do some serious disrupting in the storage market? Who will &ldquo;Do a Red Hat&rdquo; as Martin puts it? Simple: it will be Red Hat! Look at the best of breed tools at every level of the storage stack on Linux and you will find it is either from Red Hat (Gluster) or they are heavily involved (LIO target). They have the resources and the market/mind share to do it. Also they have a long history of working with and feeding back to the community, so the fortuitous circle will continue.</p>
+<p>After all that, who do I think is ripe to do some serious disrupting in the storage market? Who will &#8220;Do a Red Hat&#8221; as Martin puts it? Simple: it will be Red Hat! Look at the best of breed tools at every level of the storage stack on Linux and you will find it is either from Red Hat (Gluster) or they are heavily involved (LIO target). They have the resources and the market/mind share to do it. Also they have a long history of working with and feeding back to the community, so the fortuitous circle will continue.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Something from the shadows]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/02/21/something-from-the-shadows/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/02/21/something-from-the-shadows/"/>
     <updated>2013-02-21T16:06:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/02/21/something-from-the-shadows</id>
-    <content type="html"><![CDATA[<p>An intriguing startup came out of stealth mode a few days ago. <a href="http://pernixdata.com/">Pernix Data</a> was founded by Pookan Kumar and Satyam Vaghani, both of who were pretty near top of the pile in VMware&rsquo;s storage team.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/02/21/something-from-the-shadows</id>
+    <content type="html"><![CDATA[<p>An intriguing startup came out of stealth mode a few days ago. <a href="http://pernixdata.com/">Pernix Data</a> was founded by Pookan Kumar and Satyam Vaghani, both of who were pretty near top of the pile in VMware&#8217;s storage team.</p>
 
 <!--more -->
 
@@ -1061,9 +1061,9 @@ What their plans are I do not know. It is very early days, maybe they will be a 
   
   <entry>
     <title type="html"><![CDATA[How much should you spend on IT]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/02/06/how-much-should-you-spend-on-it/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/02/06/how-much-should-you-spend-on-it/"/>
     <updated>2013-02-06T16:04:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/02/06/how-much-should-you-spend-on-it</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/02/06/how-much-should-you-spend-on-it</id>
     <content type="html"><![CDATA[<p>A recent discussion/argument I had on Reddit got me thinking about the cost of solutions we put in.</p>
 
 <p>In an ideal world everything would did have full redundancy, and the customer would never have any downtime. Everything would always be up-to-date and keeping it so would require restarting. The reality is very different unfortunately.</p>
@@ -1071,17 +1071,17 @@ What their plans are I do not know. It is very early days, maybe they will be a 
 <!--more-->
 
 
-<p>This potentially rambling post was inspired by someone accusing me of having &ldquo;a horrible idea&rdquo; because I suggested someone put pfsense on an Atom PC as a VPN router for a small office. He then proceeded to expain to me how you should always buy an expensive black box from a vendor (he didn&rsquo;t say black box if I am honest, I am interpreting), how you have to always have support on absolutely everything. I called &lsquo;bullshit&rsquo; and the whole thing went round in circles a bit until we both realised that were actually singing from the same song sheet, but from different ends of the room.</p>
+<p>This potentially rambling post was inspired by someone accusing me of having &#8220;a horrible idea&#8221; because I suggested someone put pfsense on an Atom PC as a VPN router for a small office. He then proceeded to expain to me how you should always buy an expensive black box from a vendor (he didn&#8217;t say black box if I am honest, I am interpreting), how you have to always have support on absolutely everything. I called &#8216;bullshit&#8217; and the whole thing went round in circles a bit until we both realised that were actually singing from the same song sheet, but from different ends of the room.</p>
 
 <p><span class='pullquote-right' data-pullquote='it is always necessary to look at the actual requirements of the end-user'>
-When looking at a solution it is always necessary to look at the actual requirements of the end-user. I had a conversation with a Director at $lastjob once. We had recently had a planned outage on the website for a few minutes one Sunday night so I could de-commission the old SAN. He said that he wanted us to get to 99.999% IT uptime. My reply after some quick calculations was that we had actually achieved that for the last 3 years at least, but that I would not like to guarantee it in the future with our current and planned infrastructure. This lead to him asking me to go ahead and do the calculations on how to guarantee it. When I went back to him with my figure (done using lots of Open Source, and no vendor support) he changed his mind. This was in what would be classed as an SME &ndash; heading towards £100 million a year turnover and one of world&rsquo;s best in their field. Not a small company by any means, but they could not justify that cost.
+When looking at a solution it is always necessary to look at the actual requirements of the end-user. I had a conversation with a Director at $lastjob once. We had recently had a planned outage on the website for a few minutes one Sunday night so I could de-commission the old SAN. He said that he wanted us to get to 99.999% IT uptime. My reply after some quick calculations was that we had actually achieved that for the last 3 years at least, but that I would not like to guarantee it in the future with our current and planned infrastructure. This lead to him asking me to go ahead and do the calculations on how to guarantee it. When I went back to him with my figure (done using lots of Open Source, and no vendor support) he changed his mind. This was in what would be classed as an SME - heading towards £100 million a year turnover and one of world&#8217;s best in their field. Not a small company by any means, but they could not justify that cost.
 </span></p>
 
 <p>Having said that they could justify a lot. All our servers were clustered, storage was Fibre-channel, they had a 100TB 8Gb array for a team of 2 people who crunched monster video files all day. All that was justified expenditure, but they were not an internet company, so a bit of downtime could be justified. Even when we had a major disaster and a large swathe of Linux VMs disappeared from this world, nobody actually had to stop working and no money was lost.</p>
 
-<p>A small business is not going to dump the money for multi-thousand pound Cisco router and a zero-contention synchronous internet connection. They may think that they need the best of everything, they may even be willing to pay for it if they have got enough of daddy&rsquo;s funding behind them. However that would be foolish, that money would be better spent on giving everyone a Christmas bonus.</p>
+<p>A small business is not going to dump the money for multi-thousand pound Cisco router and a zero-contention synchronous internet connection. They may think that they need the best of everything, they may even be willing to pay for it if they have got enough of daddy&#8217;s funding behind them. However that would be foolish, that money would be better spent on giving everyone a Christmas bonus.</p>
 
-<p>Support contracts are another bone of contention. Now everything I have is under one, but that is not always necessary. I once needed to get a couple of TBs of storage into a large office asap. I happenned to have a few FC HBAs, a couple of old Proliants and a pile of MSA1000s in a cupboard. I built up a box with a pair of HBAs and a single MSA1000 and sent the whole lot up to the office with strict instructions that all the extras were for spares only. If something broke, no need for support &ndash; just swap it out. I figured it would be good for at least another 3 years. Especially as backups were pretty reliable there. Would a new SAN with expensive support have been more reliable, I doubt it. We would have to wait 4 hours for a new disk, rather than the 5 minutes a took to walk to the cupboard.</p>
+<p>Support contracts are another bone of contention. Now everything I have is under one, but that is not always necessary. I once needed to get a couple of TBs of storage into a large office asap. I happenned to have a few FC HBAs, a couple of old Proliants and a pile of MSA1000s in a cupboard. I built up a box with a pair of HBAs and a single MSA1000 and sent the whole lot up to the office with strict instructions that all the extras were for spares only. If something broke, no need for support - just swap it out. I figured it would be good for at least another 3 years. Especially as backups were pretty reliable there. Would a new SAN with expensive support have been more reliable, I doubt it. We would have to wait 4 hours for a new disk, rather than the 5 minutes a took to walk to the cupboard.</p>
 
 <p><span class='pullquote-right' data-pullquote='wisdom can fall at either end of the price-spectrum'>
 It is not always necessary to get the shiniest stuff, with the longest/quickest support contract. We know our gear, we know how reliable it is, we know how long it lasts. The people paying the bills do not, they rely on us to advise them honestly and wisely. That wisdom can fall at either end of the price-spectrum, but needs to be based on the ACTUAL risks and their effect.
@@ -1091,15 +1091,15 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
   
   <entry>
     <title type="html"><![CDATA[In praise of old school UNIX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/02/05/in-praise-of-old-school-unix/"/>
     <updated>2013-02-05T16:13:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/02/05/in-praise-of-old-school-unix</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/02/05/in-praise-of-old-school-unix</id>
     <content type="html"><![CDATA[<p>What am I doing today? Documentation that is what. I am writing a document on how to do <a href="http://www.chriscowley.me.uk/blog/2012/11/19/sftp-chroot-on-centos/">this</a>. To any Linux user it is a very simple process and I could just give them a link to my own website.</p>
 
 <!--more-->
 
 
-<p>I am not writing this for a techinical audience though. The people who are going to perform this work will be the &lsquo;Level 1 operatives&rsquo;. This translates roughly to &ldquo;anyone we can find on the street corners of some Far East city&rdquo;. If I tell them to press the red button labelled &ldquo;press me&rdquo; and it turns out to be orange, they will stop. I cannot assume the ability to edit a file in Vi. How can you work around this, well you need to make everything a copy and paste operation. This is easily done in Bash thanks to IO redirection and of course Sed.</p>
+<p>I am not writing this for a techinical audience though. The people who are going to perform this work will be the &#8216;Level 1 operatives&#8217;. This translates roughly to &#8220;anyone we can find on the street corners of some Far East city&#8221;. If I tell them to press the red button labelled &#8220;press me&#8221; and it turns out to be orange, they will stop. I cannot assume the ability to edit a file in Vi. How can you work around this, well you need to make everything a copy and paste operation. This is easily done in Bash thanks to IO redirection and of course Sed.</p>
 
 <p>Now, a brief recap may be in order, as there are some perfectly knowledgable Linux users who do not know what Sed is. Really, one of them sits behind me. Sed stands for Stream EDitor, and it parses text and applies transformations to it. It was one of the first UNIX utilities. It kind of sits between <a href="https://en.wikipedia.org/wiki/Grep">Grep</a> and <a href="https://en.wikipedia.org/wiki/AWK_programming_language">Awk</a> and is <a href="http://uuner.doslash.org/forfun/">surprisingly powerful</a>.</p>
 
@@ -1115,7 +1115,7 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
 
 <p>First line obviously is a contracted cp line which puts the suffix <em>.dist</em> on the copy.</p>
 
-<p>The basic idea is that it runs through the file (/etc/ssh/sshd_config) and looks for any line that starts with &ldquo;Subsystem&rdquo; (<code>/^Subsystem/</code>). If it finds a line that matches it then will perform a &ldquo;substituion&rdquo; (<code>/s#</code>). The next 2 blocks tell it what the substitution will be in the order &ldquo;#From#To#&rdquo;. The reason for  the change from <code>/</code> to <code>#</code> is because of the / in the path name (thanks to <a href="http://www.reddit.com/user/z0nk">Z0nk</a>  for reminding me that you can use arbitary seperators). The &ldquo;#g&rdquo; tells Sed to perform the substituion on every instance it finds on the line, rather than just the first one. It is completely superfluous in this example, but I tend to put it in from force of habit. Finally the &ldquo;-i&rdquo; tells Sed to perform the edit in place, rather than outputing to Stdout.</p>
+<p>The basic idea is that it runs through the file (/etc/ssh/sshd_config) and looks for any line that starts with &#8220;Subsystem&#8221; (<code>/^Subsystem/</code>). If it finds a line that matches it then will perform a &#8220;substituion&#8221; (<code>/s#</code>). The next 2 blocks tell it what the substitution will be in the order &#8220;#From#To#&#8221;. The reason for  the change from <code>/</code> to <code>#</code> is because of the / in the path name (thanks to <a href="http://www.reddit.com/user/z0nk">Z0nk</a>  for reminding me that you can use arbitary seperators). The &#8220;#g&#8221; tells Sed to perform the substituion on every instance it finds on the line, rather than just the first one. It is completely superfluous in this example, but I tend to put it in from force of habit. Finally the &#8220;-i&#8221; tells Sed to perform the edit in place, rather than outputing to Stdout.</p>
 
 <p>The next bit is a bit cleverer. With a single command I want to add a block of text to the file.</p>
 
@@ -1139,21 +1139,21 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
 
 <p>Here <code>cat &lt;&lt;EOF</code> tells it send everything you type to Stdout until it sees the string EOF. This then gets piped to a <code>while</code> loop that appends each line of that Stdout to the file we want to extend (<em>/etc/ssh/sshd_config</em> in this case).</p>
 
-<p>Using these old tools and a bit of knowledge of how redirection works has enabled me to make a document that anyone who can copy/paste can follow. It is very easy for technical people to forget that not everyone has the knowledge we have. To us opening Vi is perfectly obvious, but to others maybe it isn&rsquo;t and they are not being paid enough to know. They are just being paid to follow a script. I may not like it, but it is the case &ndash; it also helped turn a boring documentation session into something a little more interesting. Which is nice!</p>
+<p>Using these old tools and a bit of knowledge of how redirection works has enabled me to make a document that anyone who can copy/paste can follow. It is very easy for technical people to forget that not everyone has the knowledge we have. To us opening Vi is perfectly obvious, but to others maybe it isn&#8217;t and they are not being paid enough to know. They are just being paid to follow a script. I may not like it, but it is the case - it also helped turn a boring documentation session into something a little more interesting. Which is nice!</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Trac with Nginx on Centos]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/01/21/trac-with-nginx-on-centos/"/>
     <updated>2013-01-21T11:53:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/01/21/trac-with-nginx-on-centos</id>
+    <id>http://www.chriscowley.me.uk/blog/2013/01/21/trac-with-nginx-on-centos</id>
     <content type="html"><![CDATA[<p><a href="tac.edgewall.org">Trac</a> is an excellent online project management tool. Nginx us a great web server. Surely the combination of the two should be a match made in heaven. I would say so, although there are a couple problems. The easiest way to deploy Trac is on Apache using mod_wsgi or FastCGI. This option does not really exist for Nginx. Okay, it can do FastCGI, but I have not get that set up on my server.</p>
 
 <!-- more -->
 
 
-<p>What Nginx does do extremely well is Proxy stuff. Use this with Trac&rsquo;s built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac&rsquo;s server is not just for dev (a la WEBrick). It is fine for production use.</p>
+<p>What Nginx does do extremely well is Proxy stuff. Use this with Trac&#8217;s built in web server (tracd) and you have  a very nice little set up. Ruby people, before you get all upset, Trac&#8217;s server is not just for dev (a la WEBrick). It is fine for production use.</p>
 
 <p>The first thing to do (obviously) is to install Trac. I get it from Pip, although a slightly older version is in <a href="http://fedoraproject.org/wiki/EPEL">EPEL</a> if you prefer to stick with native packages.</p>
 
@@ -1169,7 +1169,7 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
 </span><span class='line'>sudo -u trac htpasswd -c /var/local/trac/.htpasswd example-realm chris</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Answer the little question it asks you &ndash; this includes the VCS you want to use, but that is for another day. I use the TracGit plugin to link to my Git repos.</p>
+<p>Answer the little question it asks you - this includes the VCS you want to use, but that is for another day. I use the TracGit plugin to link to my Git repos.</p>
 
 <p>Create an init script (<code>/etc/init.d/trac</code>) that contains something like:</p>
 
@@ -1215,16 +1215,16 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
   
   <entry>
     <title type="html"><![CDATA[What will HP do next?]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/12/17/what-will-hp-do-next/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/12/17/what-will-hp-do-next/"/>
     <updated>2012-12-17T15:16:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/12/17/what-will-hp-do-next</id>
+    <id>http://www.chriscowley.me.uk/blog/2012/12/17/what-will-hp-do-next</id>
     <content type="html"><![CDATA[<p>HP recently announced a new range of 3Par based arrays that are aimed at mid-range enterprise. There now appear to be 2 ranges for the future:</p>
 
 <!--more -->
 
 
 <ul>
-<li>HP StoreServ 10000 is the big boy, scales up to 1.6PB, 192 FC ports, 32 10Gb iSCSI &ndash; the works.</li>
+<li>HP StoreServ 10000 is the big boy, scales up to 1.6PB, 192 FC ports, 32 10Gb iSCSI - the works.</li>
 <li>HP StoreServ 7000 is the mid-range one, with <em>only</em> 24 FC and 8 1-Gb iSCSI. This split into the 7200 (2U) and 7400 (4U)</li>
 </ul>
 
@@ -1233,17 +1233,17 @@ It is not always necessary to get the shiniest stuff, with the longest/quickest 
 
 <p>In <a href="http://h30507.www3.hp.com/t5/Around-the-Storage-Block-Blog/Blogger-Q-amp-A-with-David-Scott/ba-p/128097">an interview with Around the Storage Block</a> HP Storage GM David Scott is quite critical of EMC who have a range of different and fairly unrelated product lines (Atmos, VMAX, VNX/VNXe, Isilion). For now HP is fairly similar: P9000 (Hitachi), P4000 (Lefthand, P2000 (Dot Hill). When you look at where they have priced the 3Par gear, it does appear that they are betting the farm on it.</p>
 
-<p>Something I have been quite vocal about over the last 5 years or so is that fact that HP&rsquo;s storage portfolio is all over the place. Compared to Netapp, who have a very homogenous portfolio (everything runs OnTAP, you know one Netapp product, you can jump on to the rest), HP have got a one interface for P2000, another for P4000, another for EVA. Nothing sits together. HP needs to get all this in line. EMC have already started with Unisphere, but they still have multiple product architectures (VMAX, VNX, Isilion for example).</p>
+<p>Something I have been quite vocal about over the last 5 years or so is that fact that HP&#8217;s storage portfolio is all over the place. Compared to Netapp, who have a very homogenous portfolio (everything runs OnTAP, you know one Netapp product, you can jump on to the rest), HP have got a one interface for P2000, another for P4000, another for EVA. Nothing sits together. HP needs to get all this in line. EMC have already started with Unisphere, but they still have multiple product architectures (VMAX, VNX, Isilion for example).</p>
 
 <p>I personally think that these other ranges will drop by the wayside, although I am reading a bit between the lines here. Dot Hill do seem to be setting themselves up to be more than just an OEM supplier to HP. Maybe it is wishful thinking as I am a <a href="http://www.chriscowley.me.uk/blog/2010/01/12/some-great-new-san-gear/">huge fan of Dot Hill</a>, but they have some very interesting products. I hope/expect to see a lot more of Dot Hill themselves over the next few years, rather than just being behind Oracle/Netapp/HP badges.</p>
 
 <p>The P9000 range is a similar story at the other end of the market. The Storserve 10k seems to be very similar, pretty much the same capacity and number of ports. Feature set is also close enough. I also have the impression that Hitachi are starting to push a bit harder in their own right as well.</p>
 
-<p>Essentially I think 3Par will become HP&rsquo;s own architecture. It has the flexibity to  cover everything from a single bay with 12 SATA disks at the low end (perhaps on DL hardware) all the way up to PB+ scales, taking in all-flash on the way.</p>
+<p>Essentially I think 3Par will become HP&#8217;s own architecture. It has the flexibity to  cover everything from a single bay with 12 SATA disks at the low end (perhaps on DL hardware) all the way up to PB+ scales, taking in all-flash on the way.</p>
 
 <p>This leaves the P4000, which has been re-branded the <a href="http://www8.hp.com/us/en/products/disk-storage/product-detail.html?oid=4118659">StoreVirtual 4000</a>. This seems to me to be a no-brainer. It is already running on commodity DL180 hardware and includes an appliance option. My guess is the physical implementation of this will be phased out. It will become the Virtual Appliance front-end to all this new 3Par based physical goodness.</p>
 
-<p>Finally, I have skipped over the EVA. What does the future hold in store for HP&rsquo;s venerable high-end platform. I think nothing. It will go into maintenance mode and be quietly end-of-life&rsquo;d. Existing customers will be pushed to <a href="http://h30507.www3.hp.com/t5/Around-the-Storage-Block-Blog/EVA-to-HP-3PAR-StoreServ-online-import/ba-p/128391">migrate</a> over to Storeserv 7000.</p>
+<p>Finally, I have skipped over the EVA. What does the future hold in store for HP&#8217;s venerable high-end platform. I think nothing. It will go into maintenance mode and be quietly end-of-life&#8217;d. Existing customers will be pushed to <a href="http://h30507.www3.hp.com/t5/Around-the-Storage-Block-Blog/EVA-to-HP-3PAR-StoreServ-online-import/ba-p/128391">migrate</a> over to Storeserv 7000.</p>
 ]]></content>
   </entry>
   

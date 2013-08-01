@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: web | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/web/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: web | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Excellent seminar given by a friend of mine]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/07/03/excellent-seminar-given-by-a-friend-of-mine/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/07/03/excellent-seminar-given-by-a-friend-of-mine/"/>
     <updated>2012-07-03T15:01:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/07/03/excellent-seminar-given-by-a-friend-of-mine</id>
-    <content type="html"><![CDATA[<p>My friend <a target="_blank" href="http://twitter.com/#!/bobscape">Rob Borley</a> was talking at this year&rsquo;s <a href="http://iwmw.ukoln.ac.uk/" target="_blank">International Web Management Workshow</a>. He actually got voted &ldquo;best talk&rdquo; &ndash; which was nice.</p>
+    <id>http://www.chriscowley.me.uk/blog/2012/07/03/excellent-seminar-given-by-a-friend-of-mine</id>
+    <content type="html"><![CDATA[<p>My friend <a target="_blank" href="http://twitter.com/#!/bobscape">Rob Borley</a> was talking at this year's <a href="http://iwmw.ukoln.ac.uk/" target="_blank">International Web Management Workshow</a>. He actually got voted "best talk" - which was nice.</p>
 
 <!-- more -->
 

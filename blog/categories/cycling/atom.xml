@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: cycling | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/cycling/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: cycling | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/cycling/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Home-made Energy Drink]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/08/01/home-made-energy-drink/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/08/01/home-made-energy-drink/"/>
     <updated>2013-08-01T11:23:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/08/01/home-made-energy-drink</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg">http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg</a>" width="200" height="300">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/08/01/home-made-energy-drink</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg" width="200" height="300">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
 
 <p>Today I am going to share a very simple recipe for what I drink when I am cycling. I have some fairly simple requirements for this.</p>
 
@@ -45,7 +45,7 @@
 
 <p>I use  500ml bottles from my <a href="http://www.laboutiqueducycle.fr/">LBS</a> that I chose for very technical reasons (they gave them to me free).</p>
 
-<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&rsquo;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
+<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you're absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
 
 <p>For each 500ml bottle I go for:</p>
 
@@ -65,10 +65,10 @@
   
   <entry>
     <title type="html"><![CDATA[Home-made Exercise drink]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/07/15/home-made-exercise-drink/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/07/15/home-made-exercise-drink/"/>
     <updated>2013-07-15T14:52:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/07/15/home-made-exercise-drink</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg">http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg</a>">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/07/15/home-made-exercise-drink</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://farm8.staticflickr.com/7120/7645659336_357c65c781.jpg">This is a simple post which also breaks from the normal subjects of Linux and storage.</p>
 
 <p>Today I am going to share a very simple recipe for what I drink when I am cycling. I have some fairly simple requirements for this.</p>
 
@@ -95,7 +95,7 @@
 
 <p>I use  500ml bottles from my <a href="http://www.laboutiqueducycle.fr/">LBS</a> that I chose for very technical reasons (they gave them to me free).</p>
 
-<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you&rsquo;re absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
+<p>The important thing to get right is the proportions. Not enough sugar and you will not replace the glucose that you burn, too much and you will struggle to absorb it. Likewise with salt, not enough and you're absorption rate will be to slow, too much and it will 1) taste nasty and 2) dehydrate you.</p>
 
 <p>For each 500ml bottle I go for:</p>
 
@@ -115,10 +115,10 @@
   
   <entry>
     <title type="html"><![CDATA[A Cycling Related Review]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/10/23/a-cycling-related-review/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/10/23/a-cycling-related-review/"/>
     <updated>2012-10-23T20:31:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/10/23/a-cycling-related-review</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://www.arkon.com/images/slimgrip/sm532.jpg">http://www.arkon.com/images/slimgrip/sm532.jpg</a>" width="300" height="300"> A little bit if a move away from computers and related subjects today. I was recently contacted by <a href="http://www.gearzap.com">Gearzap</a>/<a href="http://www.mobilefun.co.uk">MobileFun</a> who had seen that I had a Raspberry Pi. They asked if I would like to review a case and I cheekily asked if they could also give me something to mount my phone on the handlebars of my bike. Much to my pleasant surprise, they said yes.</p>
+    <id>http://www.chriscowley.me.uk/blog/2012/10/23/a-cycling-related-review</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://www.arkon.com/images/slimgrip/sm532.jpg" width="300" height="300"> A little bit if a move away from computers and related subjects today. I was recently contacted by <a href="http://www.gearzap.com">Gearzap</a>/<a href="http://www.mobilefun.co.uk">MobileFun</a> who had seen that I had a Raspberry Pi. They asked if I would like to review a case and I cheekily asked if they could also give me something to mount my phone on the handlebars of my bike. Much to my pleasant surprise, they said yes.</p>
 
 <!-- more -->
 
@@ -129,7 +129,7 @@
 
 <p>Anyway, I persevered and attached it without the shims and prayed that it would not do any damage. As I said, the instructions were very clear and this only took a few minutes.  Once on it all seemed perfectly secure, so the next day I put my phone in it. The clips keep it in place pretty well and the you also have the bungie cord as an extra, so I was not worried it would fall out at all. The route I took is a collection of French farm lanes. Some are very smooth, but some are horrible. Also, it is harvest time, so there is plenty of dried mud on the road to give it a bit more of a shaking. It held up very well, nothing shifted at all and I could easily angle the phone so it was just right.</p>
 
-<p>Later I took it off to ensure that it would fit properly on a &ldquo;normal&rdquo; sized handlebar by putting it on my mountain bike &ndash; it was fine. Also, there was absolutely no scratches on my Felt&rsquo;s bars at all, despite my concerns about not having any shims to protect them.</p>
+<p>Later I took it off to ensure that it would fit properly on a "normal" sized handlebar by putting it on my mountain bike - it was fine. Also, there was absolutely no scratches on my Felt's bars at all, despite my concerns about not having any shims to protect them.</p>
 
 <p>All in all it is a pretty good piece of kit. It can be had from <a href="http://www.mobilefun.co.uk">MobileFun</a> for £13.95, which strikes me as pretty good value.</p>
 ]]></content>
@@ -137,10 +137,10 @@
   
   <entry>
     <title type="html"><![CDATA[Isle of Wight Ride]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/07/27/isle-of-wight-ride/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/07/27/isle-of-wight-ride/"/>
     <updated>2012-07-27T16:02:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/07/27/isle-of-wight-ride</id>
-    <content type="html"><![CDATA[<p>Last week I successfully did my first 65 mile ride. Of course it was not a race, but that never stopped a group of men being over competitive &ndash; I won by the way.</p>
+    <id>http://www.chriscowley.me.uk/blog/2012/07/27/isle-of-wight-ride</id>
+    <content type="html"><![CDATA[<p>Last week I successfully did my first 65 mile ride. Of course it was not a race, but that never stopped a group of men being over competitive - I won by the way.</p>
 
 <!-- more -->
 

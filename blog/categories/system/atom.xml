@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: System | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/system/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: System | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/system/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A Learning Experience]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/04/16/a-learning-experience/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/04/16/a-learning-experience/"/>
     <updated>2012-04-16T20:30:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/04/16/a-learning-experience</id>
+    <id>http://www.chriscowley.me.uk/blog/2012/04/16/a-learning-experience</id>
     <content type="html"><![CDATA[<p>How many times have you installed/updated a bit of software and read the line “Please take a back up” or something to that effect? 99 times out of a hundred, you will just continue and ignore it.</p>
 
 <!-- more -->

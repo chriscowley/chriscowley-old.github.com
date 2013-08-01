@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: virtualisation | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/virtualisation/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: virtualisation | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/virtualisation/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[VMware CLI installation woes on Centos 6]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/02/06/vmware-cli-installation-woes-on-centos-6/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/02/06/vmware-cli-installation-woes-on-centos-6/"/>
     <updated>2012-02-06T13:09:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/02/06/vmware-cli-installation-woes-on-centos-6</id>
+    <id>http://www.chriscowley.me.uk/blog/2012/02/06/vmware-cli-installation-woes-on-centos-6</id>
     <content type="html"><![CDATA[<p>Installing the VMware CLI should have been simple, but it was a bit of a fiddle.</p>
 
 <p>Use yum  all the bits it needs:</p>
@@ -31,15 +31,15 @@ yum install make autoconf automake openssl-devel gcc gcc-c++ make uuid-perl libu
 
 <p>You should now be able to run the installer, but I had another problem though. The installer script would not believe me that I had a direct internet connection and insisted that I gave some proxy server settings. As a simple workaround I just commented out that code in the installation script:
 ```
-if ( direct_command(&ldquo;env | grep -i http_proxy&rdquo;) ) {
+if ( direct_command("env | grep -i http_proxy") ) {
  $httpproxy = 1;
 } else {
- print wrap(&ldquo;http_proxy not set. please set environment variable &lsquo;http_proxy&rsquo; e.g. export http_proxy=<a href="http://myproxy.mydomain.com:0000">http://myproxy.mydomain.com:0000</a> . \n\n&rdquo;, 0);
+ print wrap("http_proxy not set. please set environment variable 'http_proxy' e.g. export http_proxy=http://myproxy.mydomain.com:0000 . \n\n", 0);
 }
-if ( direct_command(&ldquo;env | grep -i ftp_proxy&rdquo;) ) {
+if ( direct_command("env | grep -i ftp_proxy") ) {
  $ftpproxy = 1;
 } else {
- print wrap(&ldquo;ftp_proxy not set. please set environment variable &lsquo;ftp_proxy&rsquo; e.g. export ftp_proxy=<a href="http://myproxy.mydomain.com:0000">http://myproxy.mydomain.com:0000</a> . \n\n&rdquo;, 0);
+ print wrap("ftp_proxy not set. please set environment variable 'ftp_proxy' e.g. export ftp_proxy=http://myproxy.mydomain.com:0000 . \n\n", 0);
 }</p>
 
 <p>if ( !( $ftpproxy &amp;&amp; $httpproxy)) {</p>

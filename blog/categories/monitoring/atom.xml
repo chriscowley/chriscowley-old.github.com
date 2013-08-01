@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: monitoring | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/monitoring/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: monitoring | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/monitoring/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SMS from Icinga or Nagios]]></title>
-    <link href="http://chriscowley.github.io/blog/2010/05/04/sms-from-icinga-or-nagios/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2010/05/04/sms-from-icinga-or-nagios/"/>
     <updated>2010-05-04T13:26:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2010/05/04/sms-from-icinga-or-nagios</id>
+    <id>http://www.chriscowley.me.uk/blog/2010/05/04/sms-from-icinga-or-nagios</id>
     <content type="html"><![CDATA[<p>Finding out how to have Nagios (or in my case Icinga) send SMS alerts is easy. However, from my point of view it fell down in 2 ways.</p>
 
 <ol>
@@ -33,7 +33,7 @@
 
 <p>First things first you need something to send the SMS. I am using a brand new Vodaphone USB dongle taped to the side of the rack . I also had it working with a Nokia E51 using the same tools – obviously this would the require constant charging.</p>
 
-<p>Ideally I would have prefered to use an internal card. PCI &ndash;> PC card bridges do exist, but I had no joy on my Icinga server, although it did work in a Dell Optiplex we had lying around, but it caused an HP XW4600 not to switch on at all.</p>
+<p>Ideally I would have prefered to use an internal card. PCI -> PC card bridges do exist, but I had no joy on my Icinga server, although it did work in a Dell Optiplex we had lying around, but it caused an HP XW4600 not to switch on at all.</p>
 
 <h2>Software</h2>
 

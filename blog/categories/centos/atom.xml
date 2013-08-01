@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: centos | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/centos/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: centos | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/centos/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Installing Adito/OpenVPN-ALS on CentOS]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/10/26/installing-adito-slash-openvpn-als-on-centos/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/10/26/installing-adito-slash-openvpn-als-on-centos/"/>
     <updated>2012-10-26T21:19:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/10/26/installing-adito-slash-openvpn-als-on-centos</id>
-    <content type="html"><![CDATA[<p><a href="http://sourceforge.net/projects/openvpn-als">OpenVPN-ALS</a>, formerly known as Adito, is not to be confused with <a href="http://www.openvpn.net">OpenVPN</a>. They both brilliant tools that work in completely different things, but in a similar way. Confused? Excellent&hellip;</p>
+    <id>http://www.chriscowley.me.uk/blog/2012/10/26/installing-adito-slash-openvpn-als-on-centos</id>
+    <content type="html"><![CDATA[<p><a href="http://sourceforge.net/projects/openvpn-als">OpenVPN-ALS</a>, formerly known as Adito, is not to be confused with <a href="http://www.openvpn.net">OpenVPN</a>. They both brilliant tools that work in completely different things, but in a similar way. Confused? Excellent...</p>
 
 <!-- more -->
 
@@ -37,9 +37,9 @@ sudo yum install subversion ant
 
 <p>Just to be sure run <code>sudo update-alternatives -config java</code> to make sure you are using the latest one:
 ```
-[chris@adito ~]$ sudo update-alternatives &mdash;config java</p>
+[chris@adito ~]$ sudo update-alternatives --config java</p>
 
-<p>There is 3 program that provides &lsquo;java&rsquo;.</p>
+<p>There is 3 program that provides 'java'.</p>
 
 <h2>  Selection    Command</h2>
 
@@ -99,7 +99,7 @@ cd adito-application-putty-portable-ssh
 ant
 </code></p>
 
-<p>The output will tell you the Zip file it has built which you can now upload. Go to the &ldquo;Extension Manger&rdquo; from the menu on the left. On the right you wil see &ldquo;Upload Extension&rdquo;. Choose the Zip file and you can configure it to connect to whatever Linux machine you want. &ldquo;Putty SSH&rdquo; will now be available in the list of installed applications.</p>
+<p>The output will tell you the Zip file it has built which you can now upload. Go to the "Extension Manger" from the menu on the left. On the right you wil see "Upload Extension". Choose the Zip file and you can configure it to connect to whatever Linux machine you want. "Putty SSH" will now be available in the list of installed applications.</p>
 ]]></content>
   </entry>
   

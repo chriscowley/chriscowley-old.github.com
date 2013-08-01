@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: systems | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/systems/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: systems | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/systems/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Dell Announces VRTX]]></title>
-    <link href="http://chriscowley.github.io/blog/2013/06/04/dell-announces-vrtx/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2013/06/04/dell-announces-vrtx/"/>
     <updated>2013-06-04T22:15:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2013/06/04/dell-announces-vrtx</id>
-    <content type="html"><![CDATA[<p><img class="right <a" src="href="http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG">http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG</a>"> Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being &ldquo;the intersection of multiple lines&rdquo;, alluding to this being a mixture of a rack server, a blade server and a SAN.</p>
+    <id>http://www.chriscowley.me.uk/blog/2013/06/04/dell-announces-vrtx</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://en.community.dell.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-37-45/6886.vrtx.JPG"> Dell has announced the new PowerEdge VRTX (pronounced Vertex). The name comes from a vertex being "the intersection of multiple lines", alluding to this being a mixture of a rack server, a blade server and a SAN.</p>
 
 <!-- more -->
 
@@ -29,7 +29,7 @@
 
 <p>So what we have is a system that takes the same amount of space as it competitors and is less flexible. So why would you want it? In several cases I have wanted something that would give me a simple solution to run VMware (or similar) properly (i.e. shared storage and at least 2 nodes) and go in the corner of the office on a standard plug. The other solutions can do this with a bit of thought (more so with the Supermicro), but with the VRTX will do that out-of-the-box.</p>
 
-<p>If I could make 1 request of Dell, it would be to do a &ldquo;VRTX lite&rdquo; that drops the PCI-e slots and (perhaps) halves the number of disks and servers. To get a pair of computer servers and a small SAN in a 4 bay NAS sized box would be awesome for many a SMB branch office.</p>
+<p>If I could make 1 request of Dell, it would be to do a "VRTX lite" that drops the PCI-e slots and (perhaps) halves the number of disks and servers. To get a pair of computer servers and a small SAN in a 4 bay NAS sized box would be awesome for many a SMB branch office.</p>
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/16IlDQnIMrk?rel=0" frameborder="0" allowfullscreen></iframe>
 

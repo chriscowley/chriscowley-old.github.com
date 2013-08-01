@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Subversion | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/subversion/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: Subversion | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/subversion/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[Mirror a Subversion repo with svnsync]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/07/17/mirror-a-subversion-repo-with-svnsync/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/07/17/mirror-a-subversion-repo-with-svnsync/"/>
     <updated>2012-07-17T12:03:00+02:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/07/17/mirror-a-subversion-repo-with-svnsync</id>
-    <content type="html"><![CDATA[<p>The basic idea is that everytime a change happens on the master, it gets pushed to the slave. In this set up it will <em>not</em> get you any more capacity; you cannot commit back to the slave. If you do it will get out of sync, resulting in a <em>split brain</em> situation. This is what we sysadmins call a &ldquo;bad thing&rdquo;. I am doing this in order to have <a href="http://www.atlassian.com/software/fisheye/overview" target="_blank">Atlassian Fisheye</a> can scan the repository without having to go over the network. The basic layout is:</p>
+    <id>http://www.chriscowley.me.uk/blog/2012/07/17/mirror-a-subversion-repo-with-svnsync</id>
+    <content type="html"><![CDATA[<p>The basic idea is that everytime a change happens on the master, it gets pushed to the slave. In this set up it will <em>not</em> get you any more capacity; you cannot commit back to the slave. If you do it will get out of sync, resulting in a <em>split brain</em> situation. This is what we sysadmins call a "bad thing". I am doing this in order to have <a href="http://www.atlassian.com/software/fisheye/overview" target="_blank">Atlassian Fisheye</a> can scan the repository without having to go over the network. The basic layout is:</p>
 
 <!-- more -->
 
@@ -51,11 +51,11 @@ chown -Rv svnsync:svnsync /var/local/svnsync/&lt;reponame&gt;
 
 <h1>!/bin/sh</h1>
 
-<p>USER=&ldquo;$3&rdquo;</p>
+<p>USER="$3"</p>
 
-<p>if [ &ldquo;$USER&rdquo; = &ldquo;svnsync&rdquo; ]; then exit 0; fi</p>
+<p>if [ "$USER" = "svnsync" ]; then exit 0; fi</p>
 
-<p>echo &ldquo;Only the svnsync user can change revprops&rdquo; >&amp;2
+<p>echo "Only the svnsync user can change revprops" >&amp;2
 exit 1
 ```</p>
 
@@ -68,7 +68,7 @@ chmod +x /var/local/svnsync/&lt;reponame&gt;/hooks/pre-revprop-change
 
 <p>First initialize the transfer and do the initial population. Do all this as the apache user again.
 ```
-svnsync init &mdash;username svnsync \</p>
+svnsync init --username svnsync \</p>
 
 <pre><code>svn+ssh://svnsync@&lt;slave&gt;/var/local/svnsync/&lt;reponame&gt; \
 file:///var/svn/&lt;reponame&gt;
@@ -81,7 +81,7 @@ file:///var/svn/&lt;reponame&gt;
 
 <h1>!/bin/bash</h1>
 
-<p>svnsync &mdash;username svnsync &mdash;non-interactive sync \</p>
+<p>svnsync --username svnsync --non-interactive sync \</p>
 
 <pre><code>svn+ssh://svnsync@&lt;slave&gt;/var/local/svnsync/&lt;reponame&gt;
 </code></pre>
@@ -92,13 +92,13 @@ Finally create another hook script to keep revision properties in sync in `/var/
 
 <h1>!/bin/bash</h1>
 
-<p>REPOS=&ldquo;$1&rdquo;
-REV=&ldquo;$2&rdquo;
-USER=&ldquo;$3&rdquo;
-PROPNAME=&ldquo;$4&rdquo;
-ACTION=&ldquo;$5&rdquo;</p>
+<p>REPOS="$1"
+REV="$2"
+USER="$3"
+PROPNAME="$4"
+ACTION="$5"</p>
 
-<p>svnsync &mdash;username svnsync &mdash;non-interactive copy-revprops \</p>
+<p>svnsync --username svnsync --non-interactive copy-revprops \</p>
 
 <pre><code>svn+ssh://svnsync@&lt;slave&gt;/var/local/svnsync/&lt;reponame&gt; $REV &amp;&amp; \
 exit 0

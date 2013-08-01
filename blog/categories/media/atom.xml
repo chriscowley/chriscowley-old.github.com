@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: media | My Octopress Blog]]></title>
-  <link href="http://chriscowley.github.io/blog/categories/media/atom.xml" rel="self"/>
-  <link href="http://chriscowley.github.io/"/>
-  <updated>2013-08-01T11:55:04+02:00</updated>
-  <id>http://chriscowley.github.io/</id>
+  <title><![CDATA[Category: media | Just Another Linux Blog]]></title>
+  <link href="http://www.chriscowley.me.uk/blog/categories/media/atom.xml" rel="self"/>
+  <link href="http://www.chriscowley.me.uk/"/>
+  <updated>2013-08-01T12:01:27+02:00</updated>
+  <id>http://www.chriscowley.me.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Chris Cowley]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Music Player Daemon in Fedora]]></title>
-    <link href="http://chriscowley.github.io/blog/2012/03/16/music-player-daemon-in-fedora/"/>
+    <link href="http://www.chriscowley.me.uk/blog/2012/03/16/music-player-daemon-in-fedora/"/>
     <updated>2012-03-16T22:04:00+01:00</updated>
-    <id>http://chriscowley.github.io/blog/2012/03/16/music-player-daemon-in-fedora</id>
+    <id>http://www.chriscowley.me.uk/blog/2012/03/16/music-player-daemon-in-fedora</id>
     <content type="html"><![CDATA[<p>This should have nice and simple, but there was a little gotcha (for me anyway).</p>
 
 <p>First install the RPMFusion repositories:</p>
@@ -26,7 +26,7 @@
 
 
 <p>```
-yum localinstall &mdash;nogpgcheck \</p>
+yum localinstall --nogpgcheck \</p>
 
 <pre><code>http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm \
 http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm
